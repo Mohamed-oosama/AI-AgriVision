@@ -1,0 +1,1731 @@
+{
+  "_meta": {
+    "description": "Seeded agronomic facts for AgriXAI Module 6. Keys are class names that should match the model's fine-grained label space.",
+    "version": "1.0.0",
+    "schema_doc": "category=disease|pest|deficiency; triggers={temp_c:[lo,hi], humidity_pct_min:number, season:[spring|summer|...]}; controls={biological:[],chemical:[],cultural:[]}; damage_pct_untreated_15d=number"
+  },
+  "Wheat_Yellow_Rust": {
+    "category": "disease",
+    "crop_family": "Cereal",
+    "crop": "Wheat",
+    "pathogen_or_agent": "Puccinia striiformis f. sp. tritici",
+    "common_name_en": "Wheat Yellow (Stripe) Rust",
+    "common_name_ar": "صدأ القمح الأصفر",
+    "triggers": {
+      "temp_c": [
+        10,
+        18
+      ],
+      "humidity_pct_min": 85,
+      "season": [
+        "winter",
+        "spring"
+      ]
+    },
+    "hosts": [
+      "Wheat",
+      "Barley"
+    ],
+    "controls": {
+      "biological": [
+        "Resistant cultivars (Misr 1, Sakha 95)"
+      ],
+      "chemical": [
+        "Tebuconazole 250 g/L EC",
+        "Propiconazole 25% EC"
+      ],
+      "cultural": [
+        "Early sowing",
+        "Avoid excess nitrogen"
+      ]
+    },
+    "differential_with": [
+      "Wheat_Brown_Rust",
+      "Wheat_Black_Stem_Rust"
+    ],
+    "damage_pct_untreated_15d": 35
+  },
+  "Wheat_Brown_Rust": {
+    "category": "disease",
+    "crop_family": "Cereal",
+    "crop": "Wheat",
+    "pathogen_or_agent": "Puccinia triticina",
+    "common_name_en": "Wheat Brown (Leaf) Rust",
+    "common_name_ar": "صدأ القمح البني",
+    "triggers": {
+      "temp_c": [
+        15,
+        22
+      ],
+      "humidity_pct_min": 70,
+      "season": [
+        "spring"
+      ]
+    },
+    "hosts": [
+      "Wheat"
+    ],
+    "controls": {
+      "biological": [
+        "Resistant cultivars"
+      ],
+      "chemical": [
+        "Propiconazole 25% EC",
+        "Triadimefon 25% WP"
+      ],
+      "cultural": [
+        "Crop rotation",
+        "Remove volunteer wheat"
+      ]
+    },
+    "differential_with": [
+      "Wheat_Yellow_Rust",
+      "Wheat_Black_Stem_Rust"
+    ],
+    "damage_pct_untreated_15d": 25
+  },
+  "Wheat_Black_Stem_Rust": {
+    "category": "disease",
+    "crop_family": "Cereal",
+    "crop": "Wheat",
+    "pathogen_or_agent": "Puccinia graminis f. sp. tritici",
+    "common_name_en": "Wheat Black (Stem) Rust",
+    "common_name_ar": "صدأ ساق القمح الأسود",
+    "triggers": {
+      "temp_c": [
+        20,
+        30
+      ],
+      "humidity_pct_min": 75,
+      "season": [
+        "spring",
+        "summer"
+      ]
+    },
+    "hosts": [
+      "Wheat",
+      "Barberry (alternate)"
+    ],
+    "controls": {
+      "biological": [
+        "Resistant cultivars (Sr genes)"
+      ],
+      "chemical": [
+        "Tebuconazole + Trifloxystrobin"
+      ],
+      "cultural": [
+        "Eradicate barberry near wheat fields"
+      ]
+    },
+    "differential_with": [
+      "Wheat_Yellow_Rust",
+      "Wheat_Brown_Rust"
+    ],
+    "damage_pct_untreated_15d": 50
+  },
+  "Wheat_Loose_Smut": {
+    "category": "disease",
+    "crop_family": "Cereal",
+    "crop": "Wheat",
+    "pathogen_or_agent": "Ustilago tritici",
+    "common_name_en": "Wheat Loose Smut",
+    "common_name_ar": "تفحم القمح السائب",
+    "triggers": {
+      "temp_c": [
+        16,
+        22
+      ],
+      "humidity_pct_min": 60,
+      "season": [
+        "spring"
+      ]
+    },
+    "hosts": [
+      "Wheat"
+    ],
+    "controls": {
+      "biological": [
+        "Certified disease-free seed"
+      ],
+      "chemical": [
+        "Carboxin seed treatment",
+        "Tebuconazole seed dressing"
+      ],
+      "cultural": [
+        "Seed certification programs"
+      ]
+    },
+    "differential_with": [
+      "Wheat_Bunt"
+    ],
+    "damage_pct_untreated_15d": 15
+  },
+  "Wheat_Tan_Spot": {
+    "category": "disease",
+    "crop_family": "Cereal",
+    "crop": "Wheat",
+    "pathogen_or_agent": "Pyrenophora tritici-repentis",
+    "common_name_en": "Wheat Tan Spot",
+    "common_name_ar": "البقعة السمراء في القمح",
+    "triggers": {
+      "temp_c": [
+        15,
+        28
+      ],
+      "humidity_pct_min": 70,
+      "season": [
+        "spring"
+      ]
+    },
+    "hosts": [
+      "Wheat"
+    ],
+    "controls": {
+      "biological": [
+        "Crop rotation away from wheat residue"
+      ],
+      "chemical": [
+        "Azoxystrobin",
+        "Picoxystrobin"
+      ],
+      "cultural": [
+        "Stubble management (burning or burial)"
+      ]
+    },
+    "differential_with": [
+      "Wheat_Septoria"
+    ],
+    "damage_pct_untreated_15d": 20
+  },
+  "Rice_Blast": {
+    "category": "disease",
+    "crop_family": "Cereal",
+    "crop": "Rice",
+    "pathogen_or_agent": "Magnaporthe oryzae",
+    "common_name_en": "Rice Blast",
+    "common_name_ar": "لفحة الأرز",
+    "triggers": {
+      "temp_c": [
+        22,
+        28
+      ],
+      "humidity_pct_min": 90,
+      "season": [
+        "summer"
+      ]
+    },
+    "hosts": [
+      "Rice"
+    ],
+    "controls": {
+      "biological": [
+        "Resistant cultivars (Sakha 101, 102)"
+      ],
+      "chemical": [
+        "Tricyclazole 75% WP",
+        "Isoprothiolane"
+      ],
+      "cultural": [
+        "Balanced N fertilization",
+        "Avoid late nitrogen application"
+      ]
+    },
+    "differential_with": [
+      "Rice_Brown_Spot",
+      "Rice_Sheath_Blight"
+    ],
+    "damage_pct_untreated_15d": 40
+  },
+  "Rice_Brown_Spot": {
+    "category": "disease",
+    "crop_family": "Cereal",
+    "crop": "Rice",
+    "pathogen_or_agent": "Bipolaris oryzae",
+    "common_name_en": "Rice Brown Spot",
+    "common_name_ar": "البقعة البنية في الأرز",
+    "triggers": {
+      "temp_c": [
+        25,
+        30
+      ],
+      "humidity_pct_min": 80,
+      "season": [
+        "summer"
+      ]
+    },
+    "hosts": [
+      "Rice"
+    ],
+    "controls": {
+      "biological": [
+        "Balanced potassium nutrition"
+      ],
+      "chemical": [
+        "Mancozeb 75% WP",
+        "Propiconazole"
+      ],
+      "cultural": [
+        "Soil drainage improvement",
+        "Address potassium deficiency"
+      ]
+    },
+    "differential_with": [
+      "Rice_Blast"
+    ],
+    "damage_pct_untreated_15d": 22
+  },
+  "Tomato_Late_Blight": {
+    "category": "disease",
+    "crop_family": "Solanaceae",
+    "crop": "Tomato",
+    "pathogen_or_agent": "Phytophthora infestans",
+    "common_name_en": "Tomato Late Blight",
+    "common_name_ar": "اللفحة المتأخرة في الطماطم",
+    "triggers": {
+      "temp_c": [
+        10,
+        24
+      ],
+      "humidity_pct_min": 90,
+      "season": [
+        "spring",
+        "autumn"
+      ]
+    },
+    "hosts": [
+      "Tomato",
+      "Potato"
+    ],
+    "controls": {
+      "biological": [
+        "Bacillus subtilis biofungicides"
+      ],
+      "chemical": [
+        "Mancozeb + Metalaxyl",
+        "Cymoxanil + Famoxadone"
+      ],
+      "cultural": [
+        "Wide row spacing",
+        "Drip irrigation (avoid overhead)"
+      ]
+    },
+    "differential_with": [
+      "Tomato_Early_Blight"
+    ],
+    "damage_pct_untreated_15d": 60
+  },
+  "Tomato_Early_Blight": {
+    "category": "disease",
+    "crop_family": "Solanaceae",
+    "crop": "Tomato",
+    "pathogen_or_agent": "Alternaria solani",
+    "common_name_en": "Tomato Early Blight",
+    "common_name_ar": "اللفحة المبكرة في الطماطم",
+    "triggers": {
+      "temp_c": [
+        24,
+        29
+      ],
+      "humidity_pct_min": 75,
+      "season": [
+        "summer"
+      ]
+    },
+    "hosts": [
+      "Tomato",
+      "Potato"
+    ],
+    "controls": {
+      "biological": [
+        "Trichoderma harzianum applications"
+      ],
+      "chemical": [
+        "Chlorothalonil",
+        "Azoxystrobin"
+      ],
+      "cultural": [
+        "Mulching",
+        "Lower-leaf removal"
+      ]
+    },
+    "differential_with": [
+      "Tomato_Late_Blight"
+    ],
+    "damage_pct_untreated_15d": 30
+  },
+  "Pest_Lycorma_delicatula": {
+    "category": "pest",
+    "crop_family": "Vitaceae",
+    "crop": "Grape",
+    "pathogen_or_agent": "Lycorma delicatula",
+    "common_name_en": "Spotted Lanternfly",
+    "common_name_ar": "الفانوسة المرقطة",
+    "triggers": {
+      "temp_c": [
+        20,
+        32
+      ],
+      "humidity_pct_min": 50,
+      "season": [
+        "summer",
+        "autumn"
+      ]
+    },
+    "hosts": [
+      "Grape",
+      "Tree-of-heaven (Ailanthus)",
+      "Stone fruits"
+    ],
+    "predators": [
+      "Anastatus orientalis (egg parasitoid)",
+      "Praying mantis"
+    ],
+    "controls": {
+      "biological": [
+        "Anastatus orientalis releases",
+        "Beauveria bassiana"
+      ],
+      "chemical": [
+        "Dinotefuran (systemic)",
+        "Bifenthrin (contact)"
+      ],
+      "cultural": [
+        "Remove tree-of-heaven hosts",
+        "Egg-mass scraping in winter"
+      ]
+    },
+    "differential_with": [],
+    "damage_pct_untreated_15d": 30
+  },
+  "Pest_Xylotrechus": {
+    "category": "pest",
+    "crop_family": "Vitaceae",
+    "crop": "Grape",
+    "pathogen_or_agent": "Xylotrechus spp.",
+    "common_name_en": "Grape Wood Borer",
+    "common_name_ar": "حفار خشب العنب",
+    "triggers": {
+      "temp_c": [
+        22,
+        35
+      ],
+      "humidity_pct_min": 0,
+      "season": [
+        "summer"
+      ]
+    },
+    "hosts": [
+      "Grape"
+    ],
+    "predators": [
+      "Woodpeckers",
+      "Parasitic wasps (Braconidae)"
+    ],
+    "controls": {
+      "biological": [
+        "Pheromone traps",
+        "Entomopathogenic nematodes"
+      ],
+      "chemical": [
+        "Imidacloprid trunk injection",
+        "Chlorpyrifos painting on trunk"
+      ],
+      "cultural": [
+        "Prune and burn infested wood",
+        "Whitewash trunks"
+      ]
+    },
+    "differential_with": [],
+    "damage_pct_untreated_15d": 40
+  },
+  "Pest_Rice_Yellow_Stem_Borer": {
+    "category": "pest",
+    "crop_family": "Cereal",
+    "crop": "Rice",
+    "pathogen_or_agent": "Scirpophaga incertulas",
+    "common_name_en": "Rice Yellow Stem Borer",
+    "common_name_ar": "ثاقبة ساق الأرز الصفراء",
+    "triggers": {
+      "temp_c": [
+        25,
+        32
+      ],
+      "humidity_pct_min": 70,
+      "season": [
+        "summer"
+      ]
+    },
+    "hosts": [
+      "Rice"
+    ],
+    "predators": [
+      "Trichogramma japonicum",
+      "Spiders (Lycosidae)"
+    ],
+    "controls": {
+      "biological": [
+        "Trichogramma releases (1-2 lakh/ha/week)",
+        "Pheromone traps"
+      ],
+      "chemical": [
+        "Cartap hydrochloride 4G",
+        "Chlorantraniliprole 0.4G"
+      ],
+      "cultural": [
+        "Synchronous sowing",
+        "Stubble destruction post-harvest"
+      ]
+    },
+    "differential_with": [
+      "Pest_Rice_Pink_Stem_Borer",
+      "Pest_Rice_White_Stem_Borer"
+    ],
+    "damage_pct_untreated_15d": 25
+  },
+  "Pest_Rice_Brown_Planthopper": {
+    "category": "pest",
+    "crop_family": "Cereal",
+    "crop": "Rice",
+    "pathogen_or_agent": "Nilaparvata lugens",
+    "common_name_en": "Rice Brown Planthopper",
+    "common_name_ar": "نطاط الأرز البني",
+    "triggers": {
+      "temp_c": [
+        25,
+        30
+      ],
+      "humidity_pct_min": 80,
+      "season": [
+        "summer"
+      ]
+    },
+    "hosts": [
+      "Rice"
+    ],
+    "predators": [
+      "Cyrtorhinus lividipennis",
+      "Lycosa pseudoannulata"
+    ],
+    "controls": {
+      "biological": [
+        "Conserve mirid bug populations",
+        "Reduce broad-spectrum sprays"
+      ],
+      "chemical": [
+        "Pymetrozine 50% WG",
+        "Buprofezin 25% SC"
+      ],
+      "cultural": [
+        "Avoid excess nitrogen",
+        "Drain field for 3-4 days"
+      ]
+    },
+    "differential_with": [
+      "Pest_Rice_White_Backed_Planthopper"
+    ],
+    "damage_pct_untreated_15d": 35
+  },
+  "Coffee_Boron_Deficiency": {
+    "category": "deficiency",
+    "crop_family": "Rubiaceae",
+    "crop": "Coffee",
+    "pathogen_or_agent": "B (boron)",
+    "common_name_en": "Coffee Boron Deficiency",
+    "common_name_ar": "نقص البورون في البن",
+    "triggers": {
+      "season": [
+        "any"
+      ],
+      "soil_ph_above": 7.0
+    },
+    "hosts": [
+      "Coffee"
+    ],
+    "controls": {
+      "biological": [
+        "Compost with high-boron content (kelp)"
+      ],
+      "chemical": [
+        "Foliar borax 0.2% during flowering",
+        "Solubor sprays"
+      ],
+      "cultural": [
+        "Soil pH correction toward 5.5-6.5"
+      ]
+    },
+    "critical_growth_stages": [
+      "flowering",
+      "fruit_set"
+    ],
+    "differential_with": [
+      "Coffee_Calcium_Deficiency"
+    ],
+    "damage_pct_untreated_15d": 18
+  },
+  "Coffee_Nitrogen_Deficiency": {
+    "category": "deficiency",
+    "crop_family": "Rubiaceae",
+    "crop": "Coffee",
+    "pathogen_or_agent": "N (nitrogen)",
+    "common_name_en": "Coffee Nitrogen Deficiency",
+    "common_name_ar": "نقص النيتروجين في البن",
+    "triggers": {
+      "season": [
+        "any"
+      ]
+    },
+    "hosts": [
+      "Coffee"
+    ],
+    "controls": {
+      "biological": [
+        "Leguminous cover crops (Crotalaria)"
+      ],
+      "chemical": [
+        "Urea 46% split applications",
+        "Ammonium sulfate"
+      ],
+      "cultural": [
+        "Mulch with coffee pulp"
+      ]
+    },
+    "critical_growth_stages": [
+      "vegetative",
+      "maturation"
+    ],
+    "differential_with": [
+      "Coffee_Sulfur_Deficiency"
+    ],
+    "damage_pct_untreated_15d": 22
+  },
+  "Coffee_Iron_Deficiency": {
+    "category": "deficiency",
+    "crop_family": "Rubiaceae",
+    "crop": "Coffee",
+    "pathogen_or_agent": "Fe (iron)",
+    "common_name_en": "Coffee Iron Deficiency",
+    "common_name_ar": "نقص الحديد في البن",
+    "triggers": {
+      "season": [
+        "any"
+      ],
+      "soil_ph_above": 7.5
+    },
+    "hosts": [
+      "Coffee"
+    ],
+    "controls": {
+      "biological": [
+        "Acidifying organic matter (pine bark mulch)"
+      ],
+      "chemical": [
+        "Fe-EDDHA chelate soil drench",
+        "Ferrous sulfate foliar 0.5%"
+      ],
+      "cultural": [
+        "Lower soil pH with elemental sulfur"
+      ]
+    },
+    "critical_growth_stages": [
+      "vegetative"
+    ],
+    "differential_with": [
+      "Coffee_Manganese_Deficiency"
+    ],
+    "damage_pct_untreated_15d": 14
+  },
+  "Coffee_Calcium_Deficiency": {
+    "category": "deficiency",
+    "crop_family": "Rubiaceae",
+    "crop": "Coffee",
+    "pathogen_or_agent": "Ca (calcium)",
+    "common_name_en": "Coffee Calcium Deficiency",
+    "common_name_ar": "نقص الكالسيوم في البن",
+    "triggers": {
+      "season": [
+        "any"
+      ]
+    },
+    "hosts": [
+      "Coffee"
+    ],
+    "controls": {
+      "biological": [
+        "Bone meal incorporation"
+      ],
+      "chemical": [
+        "Calcium nitrate foliar",
+        "Gypsum soil amendment"
+      ],
+      "cultural": [
+        "Avoid excessive K and Mg fertilization"
+      ]
+    },
+    "critical_growth_stages": [
+      "fruit_set",
+      "maturation"
+    ],
+    "differential_with": [
+      "Coffee_Boron_Deficiency"
+    ],
+    "damage_pct_untreated_15d": 16
+  },
+  "disease::Cassava___bacterial_blight": {
+    "category": "disease",
+    "crop_family": "Unknown",
+    "crop": "Cassava",
+    "common_name_en": "Cassava Bacterial Blight",
+    "common_name_ar": "اللفحة البكتيرية في الكسافا",
+    "pathogen_or_agent": "Unknown Pathogen/Agent",
+    "triggers": {},
+    "controls": {
+      "chemical": [
+        "Use disease-free planting materials, remove infected plants immediately, and practice crop rotation."
+      ],
+      "cultural": [
+        "Maintain field sanitation"
+      ],
+      "biological": []
+    },
+    "differential_with": [],
+    "damage_pct_untreated_15d": 25.0,
+    "critical_growth_stages": [
+      "all"
+    ]
+  },
+  "disease::Cassava___brown_streak_disease": {
+    "category": "disease",
+    "crop_family": "Unknown",
+    "crop": "Cassava",
+    "common_name_en": "Cassava Brown Streak Disease",
+    "common_name_ar": "مرض خطوط الكسافا البنية",
+    "pathogen_or_agent": "Unknown Pathogen/Agent",
+    "triggers": {},
+    "controls": {
+      "chemical": [
+        "Plant resistant cassava varieties and control whitefly vectors using neem oil or insecticidal soaps."
+      ],
+      "cultural": [
+        "Maintain field sanitation"
+      ],
+      "biological": []
+    },
+    "differential_with": [],
+    "damage_pct_untreated_15d": 25.0,
+    "critical_growth_stages": [
+      "all"
+    ]
+  },
+  "disease::Cassava___green_mottle": {
+    "category": "disease",
+    "crop_family": "Unknown",
+    "crop": "Cassava",
+    "common_name_en": "Cassava Green Mottle",
+    "common_name_ar": "تبقع الكسافا الأخضر",
+    "pathogen_or_agent": "Unknown Pathogen/Agent",
+    "triggers": {},
+    "controls": {
+      "chemical": [
+        "Use certified clean propagation stems, practice strict sanitation, and control insect vectors."
+      ],
+      "cultural": [
+        "Maintain field sanitation"
+      ],
+      "biological": []
+    },
+    "differential_with": [],
+    "damage_pct_untreated_15d": 25.0,
+    "critical_growth_stages": [
+      "all"
+    ]
+  },
+  "disease::Cassava___healthy": {
+    "category": "disease",
+    "crop_family": "Unknown",
+    "crop": "Cassava",
+    "common_name_en": "Healthy Cassava",
+    "common_name_ar": "نبات كسافا سليم",
+    "pathogen_or_agent": "Unknown Pathogen/Agent",
+    "triggers": {},
+    "controls": {
+      "chemical": [
+        "No treatment needed. Maintain optimal watering, weeding, and nutrient supply."
+      ],
+      "cultural": [
+        "Maintain field sanitation"
+      ],
+      "biological": []
+    },
+    "differential_with": [],
+    "damage_pct_untreated_15d": 25.0,
+    "critical_growth_stages": [
+      "all"
+    ]
+  },
+  "disease::Cassava___mosaic_disease": {
+    "category": "disease",
+    "crop_family": "Unknown",
+    "crop": "Cassava",
+    "common_name_en": "Cassava Mosaic Disease",
+    "common_name_ar": "فيروس تبرقش الكسافا (الموزاييك)",
+    "pathogen_or_agent": "Unknown Pathogen/Agent",
+    "triggers": {},
+    "controls": {
+      "chemical": [
+        "Plant resistant cultivars, destroy infected cassava plants, and control the whitefly vector."
+      ],
+      "cultural": [
+        "Maintain field sanitation"
+      ],
+      "biological": []
+    },
+    "differential_with": [],
+    "damage_pct_untreated_15d": 25.0,
+    "critical_growth_stages": [
+      "all"
+    ]
+  },
+  "disease::Citrus_Canker_Diseases_Leaf_Orange": {
+    "category": "disease",
+    "crop_family": "Unknown",
+    "crop": "Unknown",
+    "common_name_en": "Citrus Canker (Orange Leaf)",
+    "common_name_ar": "تقرح الحمضيات (أوراق البرتقال)",
+    "pathogen_or_agent": "Unknown Pathogen/Agent",
+    "triggers": {},
+    "controls": {
+      "chemical": [
+        "Spray copper-based bactericides preventively, prune infected twigs, and wash tools thoroughly."
+      ],
+      "cultural": [
+        "Maintain field sanitation"
+      ],
+      "biological": []
+    },
+    "differential_with": [],
+    "damage_pct_untreated_15d": 25.0,
+    "critical_growth_stages": [
+      "all"
+    ]
+  },
+  "disease::Healthy_Leaf_Orange": {
+    "category": "disease",
+    "crop_family": "Unknown",
+    "crop": "Unknown",
+    "common_name_en": "Healthy Citrus Leaf (Orange)",
+    "common_name_ar": "ورقة حمضيات سليمة (برتقال)",
+    "pathogen_or_agent": "Unknown Pathogen/Agent",
+    "triggers": {},
+    "controls": {
+      "chemical": [
+        "No action needed. Maintain proper pruning and seasonal fertilization."
+      ],
+      "cultural": [
+        "Maintain field sanitation"
+      ],
+      "biological": []
+    },
+    "differential_with": [],
+    "damage_pct_untreated_15d": 25.0,
+    "critical_growth_stages": [
+      "all"
+    ]
+  },
+  "disease::apple___healthy": {
+    "category": "disease",
+    "crop_family": "Unknown",
+    "crop": "Apple",
+    "common_name_en": "Healthy Apple",
+    "common_name_ar": "نبات تفاح سليم",
+    "pathogen_or_agent": "Unknown Pathogen/Agent",
+    "triggers": {},
+    "controls": {
+      "chemical": [
+        "No action needed. Keep monitoring leaf color and maintain balanced irrigation."
+      ],
+      "cultural": [
+        "Maintain field sanitation"
+      ],
+      "biological": []
+    },
+    "differential_with": [],
+    "damage_pct_untreated_15d": 25.0,
+    "critical_growth_stages": [
+      "all"
+    ]
+  },
+  "disease::corn_(maize)___common_rust_": {
+    "category": "disease",
+    "crop_family": "Unknown",
+    "crop": "Corn (Maize)",
+    "common_name_en": "Corn Common Rust",
+    "common_name_ar": "صدأ الذرة الشائع",
+    "pathogen_or_agent": "Unknown Pathogen/Agent",
+    "triggers": {},
+    "controls": {
+      "chemical": [
+        "Apply fungicides like strobilurins or triazoles if rust appears early. Plant resistant hybrids."
+      ],
+      "cultural": [
+        "Maintain field sanitation"
+      ],
+      "biological": []
+    },
+    "differential_with": [],
+    "damage_pct_untreated_15d": 25.0,
+    "critical_growth_stages": [
+      "all"
+    ]
+  },
+  "disease::corn_(maize)___healthy": {
+    "category": "disease",
+    "crop_family": "Unknown",
+    "crop": "Corn (Maize)",
+    "common_name_en": "Healthy Corn (Maize)",
+    "common_name_ar": "نبات ذرة سليم",
+    "pathogen_or_agent": "Unknown Pathogen/Agent",
+    "triggers": {},
+    "controls": {
+      "chemical": [
+        "No action needed. Ensure adequate nitrogen levels during growth stages."
+      ],
+      "cultural": [
+        "Maintain field sanitation"
+      ],
+      "biological": []
+    },
+    "differential_with": [],
+    "damage_pct_untreated_15d": 25.0,
+    "critical_growth_stages": [
+      "all"
+    ]
+  },
+  "disease::corn_(maize)___northern_leaf_blight": {
+    "category": "disease",
+    "crop_family": "Unknown",
+    "crop": "Corn (Maize)",
+    "common_name_en": "Northern Corn Leaf Blight",
+    "common_name_ar": "لفحة أوراق الذرة الشمالية",
+    "pathogen_or_agent": "Unknown Pathogen/Agent",
+    "triggers": {},
+    "controls": {
+      "chemical": [
+        "Apply foliar fungicides, manage crop residue, and rotate with non-host crops."
+      ],
+      "cultural": [
+        "Maintain field sanitation"
+      ],
+      "biological": []
+    },
+    "differential_with": [],
+    "damage_pct_untreated_15d": 25.0,
+    "critical_growth_stages": [
+      "all"
+    ]
+  },
+  "disease::grape___black_rot": {
+    "category": "disease",
+    "crop_family": "Unknown",
+    "crop": "Grape",
+    "common_name_en": "Grape Black Rot",
+    "common_name_ar": "العفن الأسود في العنب",
+    "pathogen_or_agent": "Unknown Pathogen/Agent",
+    "triggers": {},
+    "controls": {
+      "chemical": [
+        "Prune mummy berries and diseased canes, keep fruit off the ground, and apply fungicides early in spring."
+      ],
+      "cultural": [
+        "Maintain field sanitation"
+      ],
+      "biological": []
+    },
+    "differential_with": [],
+    "damage_pct_untreated_15d": 25.0,
+    "critical_growth_stages": [
+      "all"
+    ]
+  },
+  "disease::grape___esca_(black_measles)": {
+    "category": "disease",
+    "crop_family": "Unknown",
+    "crop": "Grape",
+    "common_name_en": "Grape Esca (Black Measles)",
+    "common_name_ar": "مرض الإسكا في العنب (الحصبة السوداء)",
+    "pathogen_or_agent": "Unknown Pathogen/Agent",
+    "triggers": {},
+    "controls": {
+      "chemical": [
+        "Protect pruning wounds with sealants. Remove badly infected vines to avoid spreading."
+      ],
+      "cultural": [
+        "Maintain field sanitation"
+      ],
+      "biological": []
+    },
+    "differential_with": [],
+    "damage_pct_untreated_15d": 25.0,
+    "critical_growth_stages": [
+      "all"
+    ]
+  },
+  "disease::grape___leaf_blight_(isariopsis_leaf_spot)": {
+    "category": "disease",
+    "crop_family": "Unknown",
+    "crop": "Grape",
+    "common_name_en": "Grape Leaf Blight",
+    "common_name_ar": "لفحة أوراق العنب",
+    "pathogen_or_agent": "Unknown Pathogen/Agent",
+    "triggers": {},
+    "controls": {
+      "chemical": [
+        "Improve canopy microclimate to reduce moisture. Apply copper fungicides after harvest."
+      ],
+      "cultural": [
+        "Maintain field sanitation"
+      ],
+      "biological": []
+    },
+    "differential_with": [],
+    "damage_pct_untreated_15d": 25.0,
+    "critical_growth_stages": [
+      "all"
+    ]
+  },
+  "disease::orange___haunglongbing_(citrus_greening)": {
+    "category": "disease",
+    "crop_family": "Unknown",
+    "crop": "Orange",
+    "common_name_en": "Citrus Greening (Huanglongbing)",
+    "common_name_ar": "اخضرار الحمضيات (الهونغلونغ بينغ)",
+    "pathogen_or_agent": "Unknown Pathogen/Agent",
+    "triggers": {},
+    "controls": {
+      "chemical": [
+        "Control the Asian citrus psyllid vector, remove infected trees, and apply nutritional sprays."
+      ],
+      "cultural": [
+        "Maintain field sanitation"
+      ],
+      "biological": []
+    },
+    "differential_with": [],
+    "damage_pct_untreated_15d": 25.0,
+    "critical_growth_stages": [
+      "all"
+    ]
+  },
+  "disease::peach___bacterial_spot": {
+    "category": "disease",
+    "crop_family": "Unknown",
+    "crop": "Peach",
+    "common_name_en": "Peach Bacterial Spot",
+    "common_name_ar": "التبقع البكتيري في الخوخ",
+    "pathogen_or_agent": "Unknown Pathogen/Agent",
+    "triggers": {},
+    "controls": {
+      "chemical": [
+        "Use copper sprays during dormancy and oxytetracycline during the growing season."
+      ],
+      "cultural": [
+        "Maintain field sanitation"
+      ],
+      "biological": []
+    },
+    "differential_with": [],
+    "damage_pct_untreated_15d": 25.0,
+    "critical_growth_stages": [
+      "all"
+    ]
+  },
+  "disease::pepper_bell___healthy": {
+    "category": "disease",
+    "crop_family": "Unknown",
+    "crop": "Pepper Bell",
+    "common_name_en": "Healthy Bell Pepper",
+    "common_name_ar": "فلفل حلو سليم",
+    "pathogen_or_agent": "Unknown Pathogen/Agent",
+    "triggers": {},
+    "controls": {
+      "chemical": [
+        "No action needed. Maintain proper calcium levels to prevent blossom end rot."
+      ],
+      "cultural": [
+        "Maintain field sanitation"
+      ],
+      "biological": []
+    },
+    "differential_with": [],
+    "damage_pct_untreated_15d": 25.0,
+    "critical_growth_stages": [
+      "all"
+    ]
+  },
+  "disease::rice___healthy": {
+    "category": "disease",
+    "crop_family": "Unknown",
+    "crop": "Rice",
+    "common_name_en": "Healthy Rice",
+    "common_name_ar": "نبات أرز سليم",
+    "pathogen_or_agent": "Unknown Pathogen/Agent",
+    "triggers": {},
+    "controls": {
+      "chemical": [
+        "No action needed. Maintain proper water level in the paddy."
+      ],
+      "cultural": [
+        "Maintain field sanitation"
+      ],
+      "biological": []
+    },
+    "differential_with": [],
+    "damage_pct_untreated_15d": 25.0,
+    "critical_growth_stages": [
+      "all"
+    ]
+  },
+  "disease::rice___leaf_blast": {
+    "category": "disease",
+    "crop_family": "Unknown",
+    "crop": "Rice",
+    "common_name_en": "Rice Leaf Blast",
+    "common_name_ar": "لفحة أوراق الأرز",
+    "pathogen_or_agent": "Unknown Pathogen/Agent",
+    "triggers": {},
+    "controls": {
+      "chemical": [
+        "Avoid excess nitrogen. Apply tricyclazole or systemic fungicides at first signs."
+      ],
+      "cultural": [
+        "Maintain field sanitation"
+      ],
+      "biological": []
+    },
+    "differential_with": [],
+    "damage_pct_untreated_15d": 25.0,
+    "critical_growth_stages": [
+      "all"
+    ]
+  },
+  "disease::rice___sheath_blight": {
+    "category": "disease",
+    "crop_family": "Unknown",
+    "crop": "Rice",
+    "common_name_en": "Rice Sheath Blight",
+    "common_name_ar": "لفحة غمد الأرز",
+    "pathogen_or_agent": "Unknown Pathogen/Agent",
+    "triggers": {},
+    "controls": {
+      "chemical": [
+        "Reduce crop density, clear weeds, and spray validamycin or hexaconazole."
+      ],
+      "cultural": [
+        "Maintain field sanitation"
+      ],
+      "biological": []
+    },
+    "differential_with": [],
+    "damage_pct_untreated_15d": 25.0,
+    "critical_growth_stages": [
+      "all"
+    ]
+  },
+  "disease::rice___tungro": {
+    "category": "disease",
+    "crop_family": "Unknown",
+    "crop": "Rice",
+    "common_name_en": "Rice Tungro Disease",
+    "common_name_ar": "مرض التونغرو في الأرز",
+    "pathogen_or_agent": "Unknown Pathogen/Agent",
+    "triggers": {},
+    "controls": {
+      "chemical": [
+        "Control green leafhoppers using insecticidal sprays, and plant resistant rice varieties."
+      ],
+      "cultural": [
+        "Maintain field sanitation"
+      ],
+      "biological": []
+    },
+    "differential_with": [],
+    "damage_pct_untreated_15d": 25.0,
+    "critical_growth_stages": [
+      "all"
+    ]
+  },
+  "disease::soybean___healthy": {
+    "category": "disease",
+    "crop_family": "Unknown",
+    "crop": "Soybean",
+    "common_name_en": "Healthy Soybean",
+    "common_name_ar": "صويا سليمة",
+    "pathogen_or_agent": "Unknown Pathogen/Agent",
+    "triggers": {},
+    "controls": {
+      "chemical": [
+        "No action needed. Keep fields free of competing weeds."
+      ],
+      "cultural": [
+        "Maintain field sanitation"
+      ],
+      "biological": []
+    },
+    "differential_with": [],
+    "damage_pct_untreated_15d": 25.0,
+    "critical_growth_stages": [
+      "all"
+    ]
+  },
+  "disease::squash___powdery_mildew": {
+    "category": "disease",
+    "crop_family": "Unknown",
+    "crop": "Squash",
+    "common_name_en": "Squash Powdery Mildew",
+    "common_name_ar": "البياض الدقيقي في الكوسة",
+    "pathogen_or_agent": "Unknown Pathogen/Agent",
+    "triggers": {},
+    "controls": {
+      "chemical": [
+        "Spray with neem oil, sulfur-based fungicides, or biofungicides at weekly intervals."
+      ],
+      "cultural": [
+        "Maintain field sanitation"
+      ],
+      "biological": []
+    },
+    "differential_with": [],
+    "damage_pct_untreated_15d": 25.0,
+    "critical_growth_stages": [
+      "all"
+    ]
+  },
+  "disease::tomato___blight": {
+    "category": "disease",
+    "crop_family": "Unknown",
+    "crop": "Tomato",
+    "common_name_en": "Tomato Blight (Early/Late)",
+    "common_name_ar": "لفحة الطماطم (المبكرة/المتأخرة)",
+    "pathogen_or_agent": "Unknown Pathogen/Agent",
+    "triggers": {},
+    "controls": {
+      "chemical": [
+        "Apply chlorothalonil or copper fungicides. Prune lower leaves to reduce soil splash."
+      ],
+      "cultural": [
+        "Maintain field sanitation"
+      ],
+      "biological": []
+    },
+    "differential_with": [],
+    "damage_pct_untreated_15d": 25.0,
+    "critical_growth_stages": [
+      "all"
+    ]
+  },
+  "disease::tomato___healthy": {
+    "category": "disease",
+    "crop_family": "Unknown",
+    "crop": "Tomato",
+    "common_name_en": "Healthy Tomato",
+    "common_name_ar": "طماطم سليمة",
+    "pathogen_or_agent": "Unknown Pathogen/Agent",
+    "triggers": {},
+    "controls": {
+      "chemical": [
+        "No action needed. Ensure consistent soil moisture to prevent fruit cracking."
+      ],
+      "cultural": [
+        "Maintain field sanitation"
+      ],
+      "biological": []
+    },
+    "differential_with": [],
+    "damage_pct_untreated_15d": 25.0,
+    "critical_growth_stages": [
+      "all"
+    ]
+  },
+  "disease::tomato___tomato_yellow_leaf_curl_virus": {
+    "category": "disease",
+    "crop_family": "Unknown",
+    "crop": "Tomato",
+    "common_name_en": "Tomato Yellow Leaf Curl Virus",
+    "common_name_ar": "فيروس تجعد أوراق الطماطم الأصفر",
+    "pathogen_or_agent": "Unknown Pathogen/Agent",
+    "triggers": {},
+    "controls": {
+      "chemical": [
+        "Control silverleaf whitefly vector with insecticides, use yellow sticky traps, and protect seedlings."
+      ],
+      "cultural": [
+        "Maintain field sanitation"
+      ],
+      "biological": []
+    },
+    "differential_with": [],
+    "damage_pct_untreated_15d": 25.0,
+    "critical_growth_stages": [
+      "all"
+    ]
+  },
+  "disease::wheat___smut": {
+    "category": "disease",
+    "crop_family": "Unknown",
+    "crop": "Wheat",
+    "common_name_en": "Wheat Smut",
+    "common_name_ar": "تفحم القمح",
+    "pathogen_or_agent": "Unknown Pathogen/Agent",
+    "triggers": {},
+    "controls": {
+      "chemical": [
+        "Use certified pathogen-free seed, treat seeds with carboxin or tebuconazole before sowing."
+      ],
+      "cultural": [
+        "Maintain field sanitation"
+      ],
+      "biological": []
+    },
+    "differential_with": [],
+    "damage_pct_untreated_15d": 25.0,
+    "critical_growth_stages": [
+      "all"
+    ]
+  },
+  "disease::wheat___yellow_rust": {
+    "category": "disease",
+    "crop_family": "Unknown",
+    "crop": "Wheat",
+    "common_name_en": "Wheat Yellow Rust",
+    "common_name_ar": "الصدأ الأصفر في القمح",
+    "pathogen_or_agent": "Unknown Pathogen/Agent",
+    "triggers": {},
+    "controls": {
+      "chemical": [
+        "Plant resistant cultivars and apply triazole fungicides at the first detection of pustules."
+      ],
+      "cultural": [
+        "Maintain field sanitation"
+      ],
+      "biological": []
+    },
+    "differential_with": [],
+    "damage_pct_untreated_15d": 25.0,
+    "critical_growth_stages": [
+      "all"
+    ]
+  },
+  "pest::aphids": {
+    "category": "pest",
+    "crop_family": "Unknown",
+    "crop": "Unknown",
+    "common_name_en": "Aphids Infestation",
+    "common_name_ar": "إصابة بحشرات المن",
+    "pathogen_or_agent": "Unknown Pathogen/Agent",
+    "triggers": {},
+    "controls": {
+      "chemical": [
+        "Release natural predators like ladybugs, spray with neem oil, or apply strong water stream."
+      ],
+      "cultural": [
+        "Maintain field sanitation"
+      ],
+      "biological": []
+    },
+    "differential_with": [],
+    "damage_pct_untreated_15d": 25.0,
+    "critical_growth_stages": [
+      "all"
+    ]
+  },
+  "pest::army_worm": {
+    "category": "pest",
+    "crop_family": "Unknown",
+    "crop": "Unknown",
+    "common_name_en": "Armyworm Attack",
+    "common_name_ar": "إصابة بالدودة الحاشدة",
+    "pathogen_or_agent": "Unknown Pathogen/Agent",
+    "triggers": {},
+    "controls": {
+      "chemical": [
+        "Apply Bacillus thuringiensis (Bt) or spinosad. Handpick larvae if infestation is localized."
+      ],
+      "cultural": [
+        "Maintain field sanitation"
+      ],
+      "biological": []
+    },
+    "differential_with": [],
+    "damage_pct_untreated_15d": 25.0,
+    "critical_growth_stages": [
+      "all"
+    ]
+  },
+  "pest::asiatic_rice_borer": {
+    "category": "pest",
+    "crop_family": "Unknown",
+    "crop": "Unknown",
+    "common_name_en": "Asiatic Rice Borer",
+    "common_name_ar": "حافرة ساق الأرز الآسيوية",
+    "pathogen_or_agent": "Unknown Pathogen/Agent",
+    "triggers": {},
+    "controls": {
+      "chemical": [
+        "Release Trichogramma wasps, spray cartap hydrochloride or chlorantraniliprole."
+      ],
+      "cultural": [
+        "Maintain field sanitation"
+      ],
+      "biological": []
+    },
+    "differential_with": [],
+    "damage_pct_untreated_15d": 25.0,
+    "critical_growth_stages": [
+      "all"
+    ]
+  },
+  "pest::blister_beetle": {
+    "category": "pest",
+    "crop_family": "Unknown",
+    "crop": "Unknown",
+    "common_name_en": "Blister Beetle Damage",
+    "common_name_ar": "ضرر الخنفساء البثرية",
+    "pathogen_or_agent": "Unknown Pathogen/Agent",
+    "triggers": {},
+    "controls": {
+      "chemical": [
+        "Handpick with heavy gloves (do not touch bare skin), spray spinosad if populations are large."
+      ],
+      "cultural": [
+        "Maintain field sanitation"
+      ],
+      "biological": []
+    },
+    "differential_with": [],
+    "damage_pct_untreated_15d": 25.0,
+    "critical_growth_stages": [
+      "all"
+    ]
+  },
+  "pest::corn_borer": {
+    "category": "pest",
+    "crop_family": "Unknown",
+    "crop": "Unknown",
+    "common_name_en": "European Corn Borer",
+    "common_name_ar": "حافرة ساق الذرة",
+    "pathogen_or_agent": "Unknown Pathogen/Agent",
+    "triggers": {},
+    "controls": {
+      "chemical": [
+        "Plant Bt-corn varieties, spray insecticides like chlorantraniliprole during egg hatch."
+      ],
+      "cultural": [
+        "Maintain field sanitation"
+      ],
+      "biological": []
+    },
+    "differential_with": [],
+    "damage_pct_untreated_15d": 25.0,
+    "critical_growth_stages": [
+      "all"
+    ]
+  },
+  "pest::leafhopper": {
+    "category": "pest",
+    "crop_family": "Unknown",
+    "crop": "Unknown",
+    "common_name_en": "Leafhopper Damage",
+    "common_name_ar": "إصابة بنطاطات الأوراق",
+    "pathogen_or_agent": "Unknown Pathogen/Agent",
+    "triggers": {},
+    "controls": {
+      "chemical": [
+        "Use insecticidal soaps, pyrethrins, or reflective mulches to deter adults."
+      ],
+      "cultural": [
+        "Maintain field sanitation"
+      ],
+      "biological": []
+    },
+    "differential_with": [],
+    "damage_pct_untreated_15d": 25.0,
+    "critical_growth_stages": [
+      "all"
+    ]
+  },
+  "pest::limacodidae": {
+    "category": "pest",
+    "crop_family": "Unknown",
+    "crop": "Unknown",
+    "common_name_en": "Cup Moth Caterpillars",
+    "common_name_ar": "يرقات عثة الكأس (اليسروع اللاسع)",
+    "pathogen_or_agent": "Unknown Pathogen/Agent",
+    "triggers": {},
+    "controls": {
+      "chemical": [
+        "Apply Bacillus thuringiensis (Bt) or pyrethroid sprays. Avoid contact due to stinging spines."
+      ],
+      "cultural": [
+        "Maintain field sanitation"
+      ],
+      "biological": []
+    },
+    "differential_with": [],
+    "damage_pct_untreated_15d": 25.0,
+    "critical_growth_stages": [
+      "all"
+    ]
+  },
+  "pest::locustoidea": {
+    "category": "pest",
+    "crop_family": "Unknown",
+    "crop": "Unknown",
+    "common_name_en": "Grasshopper (Locust) Infestation",
+    "common_name_ar": "غزو الجراد / النطاطات",
+    "pathogen_or_agent": "Unknown Pathogen/Agent",
+    "triggers": {},
+    "controls": {
+      "chemical": [
+        "Apply Beauveria bassiana spores or chemical insecticides in bait formulations."
+      ],
+      "cultural": [
+        "Maintain field sanitation"
+      ],
+      "biological": []
+    },
+    "differential_with": [],
+    "damage_pct_untreated_15d": 25.0,
+    "critical_growth_stages": [
+      "all"
+    ]
+  },
+  "pest::lycorma_delicatula": {
+    "category": "pest",
+    "crop_family": "Unknown",
+    "crop": "Unknown",
+    "common_name_en": "Spotted Lanternfly",
+    "common_name_ar": "الحشرة الفانوسية المنقطة",
+    "pathogen_or_agent": "Unknown Pathogen/Agent",
+    "triggers": {},
+    "controls": {
+      "chemical": [
+        "Scrap egg masses off trunks, use sticky bands around trees, apply dinotefuran or bifenthrin."
+      ],
+      "cultural": [
+        "Maintain field sanitation"
+      ],
+      "biological": []
+    },
+    "differential_with": [],
+    "damage_pct_untreated_15d": 25.0,
+    "critical_growth_stages": [
+      "all"
+    ]
+  },
+  "pest::miridae": {
+    "category": "pest",
+    "crop_family": "Unknown",
+    "crop": "Unknown",
+    "common_name_en": "Plant Bug Damage",
+    "common_name_ar": "ضرر حشرة النبات (الميريد)",
+    "pathogen_or_agent": "Unknown Pathogen/Agent",
+    "triggers": {},
+    "controls": {
+      "chemical": [
+        "Introduce beneficial predators, control weeds hosting the bugs, spray pyrethrins if necessary."
+      ],
+      "cultural": [
+        "Maintain field sanitation"
+      ],
+      "biological": []
+    },
+    "differential_with": [],
+    "damage_pct_untreated_15d": 25.0,
+    "critical_growth_stages": [
+      "all"
+    ]
+  },
+  "pest::mole_cricket": {
+    "category": "pest",
+    "crop_family": "Unknown",
+    "crop": "Unknown",
+    "common_name_en": "Mole Cricket Infestation",
+    "common_name_ar": "إصابة بحفار الطين (الحالوش)",
+    "pathogen_or_agent": "Unknown Pathogen/Agent",
+    "triggers": {},
+    "controls": {
+      "chemical": [
+        "Apply beneficial nematodes (Steinernema carpocapsae) or apply granular insecticides in late spring."
+      ],
+      "cultural": [
+        "Maintain field sanitation"
+      ],
+      "biological": []
+    },
+    "differential_with": [],
+    "damage_pct_untreated_15d": 25.0,
+    "critical_growth_stages": [
+      "all"
+    ]
+  },
+  "pest::prodenia_litura": {
+    "category": "pest",
+    "crop_family": "Unknown",
+    "crop": "Unknown",
+    "common_name_en": "Cotton Leafworm",
+    "common_name_ar": "دودة ورق القطن (برودينيا)",
+    "pathogen_or_agent": "Unknown Pathogen/Agent",
+    "triggers": {},
+    "controls": {
+      "chemical": [
+        "Apply microbial control agents like NPV or Bt. Use pheromone traps to monitor adult flight."
+      ],
+      "cultural": [
+        "Maintain field sanitation"
+      ],
+      "biological": []
+    },
+    "differential_with": [],
+    "damage_pct_untreated_15d": 25.0,
+    "critical_growth_stages": [
+      "all"
+    ]
+  },
+  "pest::xylotrechus": {
+    "category": "pest",
+    "crop_family": "Unknown",
+    "crop": "Unknown",
+    "common_name_en": "Longhorn Stem Borer",
+    "common_name_ar": "خنفساء قرون الاستشعار الطويلة لحفر الساق",
+    "pathogen_or_agent": "Unknown Pathogen/Agent",
+    "triggers": {},
+    "controls": {
+      "chemical": [
+        "Inject systemic insecticides like imidacloprid into trunks, prune infested branches and burn them."
+      ],
+      "cultural": [
+        "Maintain field sanitation"
+      ],
+      "biological": []
+    },
+    "differential_with": [],
+    "damage_pct_untreated_15d": 25.0,
+    "critical_growth_stages": [
+      "all"
+    ]
+  },
+  "deficiency::Citrus_Nutrient_Deficiency_Yellow_Leaf_Orange": {
+    "category": "deficiency",
+    "crop_family": "Unknown",
+    "crop": "Unknown",
+    "common_name_en": "Citrus Nutrient Deficiency",
+    "common_name_ar": "نقص العناصر الغذائية في الحمضيات",
+    "pathogen_or_agent": "Unknown Pathogen/Agent",
+    "triggers": {},
+    "controls": {
+      "chemical": [
+        "Apply balanced citrus NPK fertilizer with chelated micronutrients (Zinc, Iron, Manganese)."
+      ],
+      "cultural": [
+        "Maintain field sanitation"
+      ],
+      "biological": []
+    },
+    "differential_with": [],
+    "damage_pct_untreated_15d": 25.0,
+    "critical_growth_stages": [
+      "all"
+    ]
+  },
+  "deficiency::maize_nitrogen_absent": {
+    "category": "deficiency",
+    "crop_family": "Unknown",
+    "crop": "Unknown",
+    "common_name_en": "Maize Nitrogen Deficiency",
+    "common_name_ar": "نقص النيتروجين في الذرة",
+    "pathogen_or_agent": "Unknown Pathogen/Agent",
+    "triggers": {},
+    "controls": {
+      "chemical": [
+        "Side-dress with urea or ammonium nitrate. Apply organic compost."
+      ],
+      "cultural": [
+        "Maintain field sanitation"
+      ],
+      "biological": []
+    },
+    "differential_with": [],
+    "damage_pct_untreated_15d": 25.0,
+    "critical_growth_stages": [
+      "all"
+    ]
+  },
+  "deficiency::maize_phosphorus_absent": {
+    "category": "deficiency",
+    "crop_family": "Unknown",
+    "crop": "Unknown",
+    "common_name_en": "Maize Phosphorus Deficiency",
+    "common_name_ar": "نقص الفوسفور في الذرة",
+    "pathogen_or_agent": "Unknown Pathogen/Agent",
+    "triggers": {},
+    "controls": {
+      "chemical": [
+        "Apply superphosphate or DAP fertilizer at root zone. Correct soil pH if highly acidic."
+      ],
+      "cultural": [
+        "Maintain field sanitation"
+      ],
+      "biological": []
+    },
+    "differential_with": [],
+    "damage_pct_untreated_15d": 25.0,
+    "critical_growth_stages": [
+      "all"
+    ]
+  },
+  "deficiency::maize_potassium_absent": {
+    "category": "deficiency",
+    "crop_family": "Unknown",
+    "crop": "Unknown",
+    "common_name_en": "Maize Potassium Deficiency",
+    "common_name_ar": "نقص البوتاسيوم في الذرة",
+    "pathogen_or_agent": "Unknown Pathogen/Agent",
+    "triggers": {},
+    "controls": {
+      "chemical": [
+        "Apply potassium sulfate or muriate of potash. Ensure well-drained soil conditions."
+      ],
+      "cultural": [
+        "Maintain field sanitation"
+      ],
+      "biological": []
+    },
+    "differential_with": [],
+    "damage_pct_untreated_15d": 25.0,
+    "critical_growth_stages": [
+      "all"
+    ]
+  },
+  "deficiency::maize_zinc_absent": {
+    "category": "deficiency",
+    "crop_family": "Unknown",
+    "crop": "Unknown",
+    "common_name_en": "Maize Zinc Deficiency",
+    "common_name_ar": "نقص الزنك في الذرة",
+    "pathogen_or_agent": "Unknown Pathogen/Agent",
+    "triggers": {},
+    "controls": {
+      "chemical": [
+        "Apply zinc sulfate fertilizer to the soil or spray zinc chelates onto foliage."
+      ],
+      "cultural": [
+        "Maintain field sanitation"
+      ],
+      "biological": []
+    },
+    "differential_with": [],
+    "damage_pct_untreated_15d": 25.0,
+    "critical_growth_stages": [
+      "all"
+    ]
+  }
+}

@@ -1,0 +1,1 @@
+["area_idx", "day_count", "dewpoint_temp", "ndvi_anomaly_z", "ndvi_cv", "ndvi_evi_ratio", "ndvi_rolling_std", "ndvi_stressed_flag", "ndvi_x_soil_moisture", "precip_zscore", "rad_x_temp", "radiation_x_moisture", "runoff", "season_cos", "season_sin", "soil_moisture_l2"]

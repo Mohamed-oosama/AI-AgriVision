@@ -1,0 +1,43 @@
+# AgriAI v8 — Requirements
+# Target: RTX 4050 6GB | Python 3.10+
+
+# ── LangGraph ──────────────────────────────────────────────
+langgraph>=0.2.0
+langchain-core>=0.3.0
+
+# ── Vector search ──────────────────────────────────────────
+faiss-gpu>=1.7.4            # use faiss-cpu if no CUDA
+numpy>=1.26.0
+
+# ── Sparse retrieval ───────────────────────────────────────
+rank-bm25>=0.2.2
+
+# ── Embeddings + Reranker ──────────────────────────────────
+# BAAI/bge-m3 + BAAI/bge-reranker-v2-m3
+sentence-transformers>=2.7.0
+torch>=2.2.0                # CUDA 12.x build recommended
+transformers>=4.40.0
+
+# ── Fuzzy matching (ontology + graph) ─────────────────────
+rapidfuzz>=3.6.0
+
+# ── Graph reasoning ────────────────────────────────────────
+networkx>=3.2.0
+
+# ── HTTP client ────────────────────────────────────────────
+requests>=2.31.0
+urllib3>=2.0.0
+
+# ── API server ─────────────────────────────────────────────
+fastapi>=0.111.0
+uvicorn[standard]>=0.29.0
+pydantic>=2.7.0
+
+# ── Caching (optional) ─────────────────────────────────────
+redis>=5.0.0                # optional — USE_REDIS=true to enable
+
+# ── Monitoring (optional) ──────────────────────────────────
+# prometheus-client>=0.20.0
+
+# ── Dev / evaluation ───────────────────────────────────────
+pytest>=8.0.0

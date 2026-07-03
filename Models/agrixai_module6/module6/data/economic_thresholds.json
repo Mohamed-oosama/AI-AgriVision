@@ -1,0 +1,38 @@
+{
+  "_meta": {
+    "description": "Economic Threshold (ET) lookup. ET = the damage level at which the cost of intervention equals the expected loss without intervention. Trigger 'critical' when predicted damage > ET.",
+    "fields": {
+      "et_pct": "% yield loss above which treatment becomes economically justified",
+      "intervention_cost_usd_ha": "Approximate cost of standard treatment per hectare",
+      "yield_value_usd_ha": "Approximate gross yield value per hectare",
+      "min_confidence_for_alert": "If model confidence below this, downgrade severity"
+    },
+    "fallback": {
+      "disease":     {"et_pct": 15, "intervention_cost_usd_ha": 80,  "yield_value_usd_ha": 1500, "min_confidence_for_alert": 0.55},
+      "pest":        {"et_pct": 12, "intervention_cost_usd_ha": 70,  "yield_value_usd_ha": 1500, "min_confidence_for_alert": 0.55},
+      "deficiency":  {"et_pct": 10, "intervention_cost_usd_ha": 50,  "yield_value_usd_ha": 1500, "min_confidence_for_alert": 0.50}
+    }
+  },
+
+  "Wheat_Yellow_Rust":         {"et_pct": 5,  "intervention_cost_usd_ha": 90,  "yield_value_usd_ha": 1800, "min_confidence_for_alert": 0.55},
+  "Wheat_Brown_Rust":          {"et_pct": 8,  "intervention_cost_usd_ha": 85,  "yield_value_usd_ha": 1800, "min_confidence_for_alert": 0.55},
+  "Wheat_Black_Stem_Rust":     {"et_pct": 3,  "intervention_cost_usd_ha": 110, "yield_value_usd_ha": 1800, "min_confidence_for_alert": 0.50},
+  "Wheat_Loose_Smut":          {"et_pct": 5,  "intervention_cost_usd_ha": 25,  "yield_value_usd_ha": 1800, "min_confidence_for_alert": 0.55},
+  "Wheat_Tan_Spot":            {"et_pct": 10, "intervention_cost_usd_ha": 75,  "yield_value_usd_ha": 1800, "min_confidence_for_alert": 0.55},
+
+  "Rice_Blast":                {"et_pct": 5,  "intervention_cost_usd_ha": 95,  "yield_value_usd_ha": 2200, "min_confidence_for_alert": 0.55},
+  "Rice_Brown_Spot":           {"et_pct": 12, "intervention_cost_usd_ha": 70,  "yield_value_usd_ha": 2200, "min_confidence_for_alert": 0.55},
+
+  "Tomato_Late_Blight":        {"et_pct": 4,  "intervention_cost_usd_ha": 130, "yield_value_usd_ha": 6000, "min_confidence_for_alert": 0.50},
+  "Tomato_Early_Blight":       {"et_pct": 8,  "intervention_cost_usd_ha": 110, "yield_value_usd_ha": 6000, "min_confidence_for_alert": 0.55},
+
+  "Pest_Lycorma_delicatula":   {"et_pct": 8,  "intervention_cost_usd_ha": 140, "yield_value_usd_ha": 8000, "min_confidence_for_alert": 0.55},
+  "Pest_Xylotrechus":          {"et_pct": 6,  "intervention_cost_usd_ha": 160, "yield_value_usd_ha": 8000, "min_confidence_for_alert": 0.55},
+  "Pest_Rice_Yellow_Stem_Borer":     {"et_pct": 10, "intervention_cost_usd_ha": 75, "yield_value_usd_ha": 2200, "min_confidence_for_alert": 0.55},
+  "Pest_Rice_Brown_Planthopper":     {"et_pct": 8,  "intervention_cost_usd_ha": 80, "yield_value_usd_ha": 2200, "min_confidence_for_alert": 0.55},
+
+  "Coffee_Boron_Deficiency":   {"et_pct": 8,  "intervention_cost_usd_ha": 35, "yield_value_usd_ha": 4000, "min_confidence_for_alert": 0.50},
+  "Coffee_Nitrogen_Deficiency":{"et_pct": 12, "intervention_cost_usd_ha": 60, "yield_value_usd_ha": 4000, "min_confidence_for_alert": 0.50},
+  "Coffee_Iron_Deficiency":    {"et_pct": 7,  "intervention_cost_usd_ha": 45, "yield_value_usd_ha": 4000, "min_confidence_for_alert": 0.50},
+  "Coffee_Calcium_Deficiency": {"et_pct": 9,  "intervention_cost_usd_ha": 40, "yield_value_usd_ha": 4000, "min_confidence_for_alert": 0.50}
+}

@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI AgriVision - Smart Soil Analysis</title>
+    <link rel="stylesheet" href="/static/style.css">
+    <!-- FontAwesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Outfit Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Marked.js for Markdown parsing -->
+    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+</head>
+<body>
+    <div class="app-background"></div>
+
+    <div class="main-container">
+        <!-- Floating Navbar -->
+        <nav class="navbar glass-effect">
+            <div class="nav-brand">
+                <div class="logo-icon-wrapper">
+                    <i class="fa-solid fa-leaf"></i>
+                </div>
+                <span class="brand-name"><strong>AI</strong> AgriVision</span>
+            </div>
+            
+            <ul class="nav-links">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Analyze</a></li>
+                <li><a href="#" class="active">Soil Analysis</a></li>
+                <li><a href="#">AI Chat</a></li>
+                <li><a href="#">Graph Explorer</a></li>
+                <li><a href="#">History</a></li>
+                <li><a href="#">Dashboard</a></li>
+                <li><a href="#">Settings</a></li>
+            </ul>
+
+            <div class="nav-actions">
+                <button class="icon-btn" title="Translate"><i class="fa-solid fa-language"></i></button>
+                <span class="lang-text">EN</span>
+                <button class="icon-btn" title="Toggle Dark Mode"><i class="fa-regular fa-moon"></i></button>
+            </div>
+        </nav>
+
+        <header class="page-header">
+            <div class="header-icon">
+                <i class="fa-solid fa-seedling"></i>
+            </div>
+            <div class="header-text">
+                <h1>Smart Soil Analysis</h1>
+                <p>AI-tuned fertilizer plan from soil, crop and season.</p>
+            </div>
+        </header>
+
+        <main class="dashboard">
+            <section class="form-section glass-effect">
+                <form id="soilForm">
+                    <div class="input-grid form-layout">
+                        <!-- Row 1 -->
+                        <div class="input-group">
+                            <label for="crop"><i class="fa-solid fa-leaf text-green"></i> TARGET CROP</label>
+                            <div class="custom-select-wrapper">
+                                <select id="crop" required>
+                                    <option value="" disabled selected>Select crop...</option>
+                                    <!-- Populated by JS -->
+                                </select>
+                            </div>
+                        </div>
+
+                        <div class="input-group">
+                            <label for="season"><i class="fa-solid fa-sun text-orange"></i> SEASON</label>
+                            <div class="custom-select-wrapper">
+                                <select id="season" required>
+                                    <option value="spring">Spring</option>
+                                    <option value="summer" selected>Summer</option>
+                                    <option value="autumn">Autumn</option>
+                                    <option value="winter">Winter</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <div class="input-group">
+                            <label for="ph_val"><i class="fa-solid fa-droplet text-blue"></i> PH LEVEL</label>
+                            <input type="number" id="ph_val" step="0.1" min="0" placeholder="6.5" required>
+                        </div>
+
+                        <!-- Row 2 -->
+                        <div class="input-group">
+                            <label for="n_val"><span class="badge badge-green">N</span> NITROGEN (N) KG/HA</label>
+                            <input type="number" id="n_val" step="0.1" min="0" placeholder="80" required>
+                        </div>
+
+                        <div class="input-group">
+                            <label for="p_val"><span class="badge badge-orange">P</span> PHOSPHORUS (P) KG/HA</label>
+                            <input type="number" id="p_val" step="0.1" min="0" placeholder="40" required>
+                        </div>
+
+                        <div class="input-group">
+                            <label for="k_val"><span class="badge badge-blue">K</span> POTASSIUM (K) KG/HA</label>
+                            <input type="number" id="k_val" step="0.1" min="0" placeholder="90" required>
+                        </div>
+
+                        <!-- Row 3 -->
+                        <div class="input-group">
+                            <label for="temperature"><i class="fa-solid fa-temperature-half text-orange"></i> TEMPERATURE (°C)</label>
+                            <input type="number" id="temperature" step="0.1" placeholder="Auto">
+                        </div>
+
+                        <div class="input-group">
+                            <label for="humidity"><i class="fa-solid fa-droplet text-blue"></i> HUMIDITY (%)</label>
+                            <input type="number" id="humidity" step="0.1" min="0" placeholder="Auto">
+                        </div>
+
+                        <div class="input-group">
+                            <label for="rainfall"><i class="fa-solid fa-cloud-rain text-blue"></i> RAINFALL (mm)</label>
+                            <input type="number" id="rainfall" step="0.1" min="0" placeholder="Auto">
+                        </div>
+
+                        <!-- Row 4 -->
+                        <div class="input-group full-width">
+                            <label for="soil_type"><i class="fa-solid fa-layer-group text-green"></i> SOIL TYPE</label>
+                            <div class="custom-select-wrapper">
+                                <select id="soil_type" required>
+                                    <option value="" disabled>Select soil type...</option>
+                                    <option value="clay">Clay (طينية)</option>
+                                    <option value="sandy">Sandy (رملية)</option>
+                                    <option value="loamy" selected>Loamy (طميية)</option>
+                                    <option value="silt">Silt (غرينية)</option>
+                                    <option value="peaty">Peaty (خثية)</option>
+                                    <option value="chalky">Chalky (طباشيرية)</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+
+                    <button type="submit" class="submit-btn" id="submitBtn">
+                        <i class="fa-solid fa-wand-magic-sparkles"></i> Generate Recommendation
+                    </button>
+                </form>
+            </section>
+
+            <div class="section-title">
+                <h2><i class="fa-regular fa-circle-check text-green"></i> Recommendation Report</h2>
+            </div>
+
+            <section class="result-section" id="resultSection">
+                <div class="result-card glass-effect report-card" id="reportCard">
+                    <div class="empty-state" id="emptyState">
+                        <p>Fill out the form to generate a recommendation.</p>
+                    </div>
+                    
+                    <div class="loading-state hidden" id="loadingState">
+                        <div class="spinner"></div>
+                        <p>Analyzing soil data...</p>
+                    </div>
+
+                    <div class="result-content hidden" id="resultContent">
+                        <div class="result-badge">
+                            <i class="fa-solid fa-leaf"></i> <span id="resCropName">Crop</span>
+                        </div>
+                        <h3 id="resTitle" class="report-title">Cultivation Recommendations</h3>
+                        <div class="markdown-body" id="recommendationText"></div>
+                    </div>
+                </div>
+
+                <div class="result-card glass-effect chart-card">
+                    <h3>Nutrient Level Comparison</h3>
+                    <p class="subtitle">Your nutrient values compared to ideal requirements.</p>
+                    <div class="chart-placeholder" id="chartContainer">
+                        <p class="chart-empty">Awaiting data...</p>
+                        <!-- A real app would put a Chart.js canvas here -->
+                    </div>
+                </div>
+            </section>
+        </main>
+    </div>
+
+    <script src="/static/script.js"></script>
+</body>
+</html>

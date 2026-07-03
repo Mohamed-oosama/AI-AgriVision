@@ -1,0 +1,610 @@
+{
+  "best_model_name": "Random Forest",
+  "ML_FEATURES": [
+    "year_norm",
+    "year_sq",
+    "decade",
+    "temp_change_c",
+    "temp_5y",
+    "summer_temp_anomaly",
+    "winter_temp_anomaly",
+    "nitrogen_t",
+    "phosphate_t",
+    "pesticides_t",
+    "n_intensity",
+    "p_intensity",
+    "pest_intensity",
+    "np_ratio",
+    "arable_1000ha",
+    "temp_x_n",
+    "summer_x_n",
+    "log_n",
+    "log_pest",
+    "temp_mean_c",
+    "tmax_mean_c",
+    "tmin_mean_c",
+    "precip_mm",
+    "summer_tmax_c",
+    "summer_precip_mm",
+    "summer_hot_days"
+  ],
+  "TRAIN_UNTIL": 2012,
+  "TARGET": "yield_detrend_std",
+  "HAS_PRECIP": true,
+  "feature_medians": {
+    "year_norm": 0.5396825396825397,
+    "year_sq": 0.291257243638196,
+    "decade": 1990.0,
+    "temp_change_c": 0.29056965341717245,
+    "temp_5y": 0.15756388951268577,
+    "summer_temp_anomaly": 0.3299316939890744,
+    "winter_temp_anomaly": 0.4113642653642664,
+    "nitrogen_t": 915000.0,
+    "phosphate_t": 150000.0,
+    "pesticides_t": 12909.0,
+    "n_intensity": 0.343183779119931,
+    "p_intensity": 0.053418803418803416,
+    "pest_intensity": 0.004303856919388377,
+    "np_ratio": 5.896811337466785,
+    "arable_1000ha": 2707.0,
+    "temp_x_n": 0.04464172724493865,
+    "summer_x_n": 0.08202236182383355,
+    "log_n": 13.726680437153236,
+    "log_pest": 9.465757483840688,
+    "temp_mean_c": 22.7594262295082,
+    "tmax_mean_c": 29.90068493150685,
+    "tmin_mean_c": 15.935382513661203,
+    "precip_mm": 18.25,
+    "summer_tmax_c": 36.73729508196721,
+    "summer_precip_mm": 0.1,
+    "summer_hot_days": 98.0
+  },
+  "crop_stats": {
+    "Apples": {
+      "trend_coeffs": [
+        310.9793484162877,
+        -604999.8907933593
+      ],
+      "yield_std": 4277.77578492996
+    },
+    "Apricots": {
+      "trend_coeffs": [
+        188.75695022624365,
+        -363845.70911915385
+      ],
+      "yield_std": 2393.5638884861637
+    },
+    "Artichokes": {
+      "trend_coeffs": [
+        -37.932651583708335,
+        96379.18457918135
+      ],
+      "yield_std": 4806.06748423684
+    },
+    "Bananas": {
+      "trend_coeffs": [
+        592.9611493212655,
+        -1149253.621348413
+      ],
+      "yield_std": 4065.021229961643
+    },
+    "Barley": {
+      "trend_coeffs": [
+        -11.405140271493178,
+        25084.190190045163
+      ],
+      "yield_std": 436.4057414059675
+    },
+    "Beans (dry)": {
+      "trend_coeffs": [
+        25.81467873303147,
+        -48990.82742684724
+      ],
+      "yield_std": 192.21311676524437
+    },
+    "Beans (green)": {
+      "trend_coeffs": [
+        63.63756561085913,
+        -116992.40169230643
+      ],
+      "yield_std": 769.0869516070148
+    },
+    "Broad Beans (dry)": {
+      "trend_coeffs": [
+        32.25149321266964,
+        -61470.65426847649
+      ],
+      "yield_std": 321.2185274937782
+    },
+    "Broad Beans (green)": {
+      "trend_coeffs": [
+        137.28390950226034,
+        -262833.34778883436
+      ],
+      "yield_std": 2234.171972740509
+    },
+    "Cabbages": {
+      "trend_coeffs": [
+        189.30104072398103,
+        -349637.2855656089
+      ],
+      "yield_std": 1765.4010886004662
+    },
+    "Carrots": {
+      "trend_coeffs": [
+        237.05575565610843,
+        -446591.89237104025
+      ],
+      "yield_std": 1320.8149590091678
+    },
+    "Cauliflower & Broccoli": {
+      "trend_coeffs": [
+        90.7045248868772,
+        -156938.62428355825
+      ],
+      "yield_std": 1463.8117348321107
+    },
+    "Chickpeas": {
+      "trend_coeffs": [
+        9.163936651583679,
+        -16445.84604826539
+      ],
+      "yield_std": 137.9213428026573
+    },
+    "Cotton": {
+      "trend_coeffs": [
+        11.620009049773769,
+        -20795.285432880857
+      ],
+      "yield_std": 291.1047941378393
+    },
+    "Cowpeas": {
+      "trend_coeffs": [
+        30.846515837104015,
+        -59126.99755656096
+      ],
+      "yield_std": 224.53856503449134
+    },
+    "Cucumbers": {
+      "trend_coeffs": [
+        195.20394570135724,
+        -370914.46559879277
+      ],
+      "yield_std": 944.2794710873874
+    },
+    "Dates": {
+      "trend_coeffs": [
+        414.08590045248735,
+        -797768.5743951703
+      ],
+      "yield_std": 3102.1910870663496
+    },
+    "Eggplants": {
+      "trend_coeffs": [
+        66.92125791855204,
+        -110649.85909200598
+      ],
+      "yield_std": 1553.3550210975095
+    },
+    "Figs": {
+      "trend_coeffs": [
+        69.45947511312167,
+        -132227.27312820408
+      ],
+      "yield_std": 2269.2130430708194
+    },
+    "Flax": {
+      "trend_coeffs": [
+        3.5784343891402792,
+        -6216.553052790358
+      ],
+      "yield_std": 56.505979897042714
+    },
+    "Garlic": {
+      "trend_coeffs": [
+        40.50578280543316,
+        -55535.368865768185
+      ],
+      "yield_std": 6447.378130367239
+    },
+    "Grapefruit": {
+      "trend_coeffs": [
+        163.93926919519026,
+        -313242.4000462547
+      ],
+      "yield_std": 3918.6799080673886
+    },
+    "Grapes": {
+      "trend_coeffs": [
+        265.49898642533753,
+        -513023.9173996945
+      ],
+      "yield_std": 2478.0394831755007
+    },
+    "Groundnuts": {
+      "trend_coeffs": [
+        34.04644343891386,
+        -65214.096838612
+      ],
+      "yield_std": 264.7789659850872
+    },
+    "Jute": {
+      "trend_coeffs": [
+        -6.423628959275958,
+        15284.231134238187
+      ],
+      "yield_std": 157.28286795958223
+    },
+    "Lemons": {
+      "trend_coeffs": [
+        140.19179185520198,
+        -262480.98257314897
+      ],
+      "yield_std": 4675.225413077007
+    },
+    "Lentils": {
+      "trend_coeffs": [
+        7.993212669683179,
+        -14272.55475113106
+      ],
+      "yield_std": 265.80267307827245
+    },
+    "Lettuce": {
+      "trend_coeffs": [
+        72.45502262443455,
+        -121699.12407239844
+      ],
+      "yield_std": 2045.570317638675
+    },
+    "Linseed": {
+      "trend_coeffs": [
+        15.287809954751143,
+        -28978.327399698355
+      ],
+      "yield_std": 194.482122897178
+    },
+    "Lupins": {
+      "trend_coeffs": [
+        8.149185520361959,
+        -14491.963001508226
+      ],
+      "yield_std": 183.87480164875217
+    },
+    "Maize": {
+      "trend_coeffs": [
+        117.92342986425334,
+        -228918.29239517322
+      ],
+      "yield_std": 495.75398529594474
+    },
+    "Mangoes": {
+      "trend_coeffs": [
+        28.43199999999919,
+        -47787.21537254737
+      ],
+      "yield_std": 1819.5360049116666
+    },
+    "Melons": {
+      "trend_coeffs": [
+        25.573502262443014,
+        -28989.26664253308
+      ],
+      "yield_std": 1961.7157744963447
+    },
+    "Okra": {
+      "trend_coeffs": [
+        0.10682352941156135,
+        13919.978901961189
+      ],
+      "yield_std": 1012.2711227330552
+    },
+    "Olives": {
+      "trend_coeffs": [
+        143.23449773755615,
+        -279591.7117104063
+      ],
+      "yield_std": 1460.3693663702636
+    },
+    "Onions": {
+      "trend_coeffs": [
+        187.0772126696844,
+        -339592.81765309407
+      ],
+      "yield_std": 8194.287375639142
+    },
+    "Oranges": {
+      "trend_coeffs": [
+        265.3342986425337,
+        -510666.58669683186
+      ],
+      "yield_std": 1636.9890107077906
+    },
+    "Peaches": {
+      "trend_coeffs": [
+        -20.66263348416352,
+        50771.88606636623
+      ],
+      "yield_std": 2563.0213512765736
+    },
+    "Pears": {
+      "trend_coeffs": [
+        85.7385339366505,
+        -159125.3688929088
+      ],
+      "yield_std": 3988.900840783221
+    },
+    "Peas (dry)": {
+      "trend_coeffs": [
+        5.616389140271495,
+        -9337.059339366513
+      ],
+      "yield_std": 483.7821893006486
+    },
+    "Peas (green)": {
+      "trend_coeffs": [
+        96.72557466063334,
+        -183520.3501840117
+      ],
+      "yield_std": 1410.5793954817943
+    },
+    "Peppers (dry)": {
+      "trend_coeffs": [
+        16.292606334841555,
+        -29440.930355957607
+      ],
+      "yield_std": 162.13341457662474
+    },
+    "Peppers (green)": {
+      "trend_coeffs": [
+        14.29676018099567,
+        -12527.876205128581
+      ],
+      "yield_std": 970.8129170856657
+    },
+    "Plums": {
+      "trend_coeffs": [
+        249.10244343891344,
+        -485870.0355052777
+      ],
+      "yield_std": 2984.3321288985244
+    },
+    "Potatoes": {
+      "trend_coeffs": [
+        232.2671221719458,
+        -441257.99136349926
+      ],
+      "yield_std": 1243.0263091783804
+    },
+    "Pumpkins": {
+      "trend_coeffs": [
+        5.225800904977565,
+        7466.308111613504
+      ],
+      "yield_std": 657.7081275046316
+    },
+    "Quinces": {
+      "trend_coeffs": [
+        -63.045194805193475,
+        135000.71809523535
+      ],
+      "yield_std": 626.0081542385753
+    },
+    "Rice": {
+      "trend_coeffs": [
+        117.34228959275971,
+        -226130.59020512717
+      ],
+      "yield_std": 659.800444276931
+    },
+    "Rye": {
+      "trend_coeffs": [
+        0.7420948616601375,
+        512.072529644152
+      ],
+      "yield_std": 50.0
+    },
+    "Sesame": {
+      "trend_coeffs": [
+        5.560081447963805,
+        -9903.562229260939
+      ],
+      "yield_std": 102.13122689061026
+    },
+    "Sorghum": {
+      "trend_coeffs": [
+        46.278552036199095,
+        -87410.53779788833
+      ],
+      "yield_std": 406.00987016122383
+    },
+    "Soybeans": {
+      "trend_coeffs": [
+        37.99374296435262,
+        -73038.1103564726
+      ],
+      "yield_std": 388.0917624391519
+    },
+    "Spices": {
+      "trend_coeffs": [
+        0.9991764705882288,
+        -1159.8381568627312
+      ],
+      "yield_std": 61.22960724767019
+    },
+    "Spinach": {
+      "trend_coeffs": [
+        -19.535384615384707,
+        55326.34060331842
+      ],
+      "yield_std": 2640.734988893943
+    },
+    "Stone Fruits (other)": {
+      "trend_coeffs": [
+        36.46974358974375,
+        -65518.11384615417
+      ],
+      "yield_std": 326.3815669109504
+    },
+    "Strawberries": {
+      "trend_coeffs": [
+        935.0903042521923,
+        -1845388.426814502
+      ],
+      "yield_std": 5931.563028975538
+    },
+    "String beans": {
+      "trend_coeffs": [
+        -7.073291925466425,
+        20864.91197063923
+      ],
+      "yield_std": 438.8299329833772
+    },
+    "Sugar beet": {
+      "trend_coeffs": [
+        652.6571524064094,
+        -1258708.3883244044
+      ],
+      "yield_std": 3971.133123504927
+    },
+    "Sugar cane": {
+      "trend_coeffs": [
+        806.6851040723941,
+        -1503110.6057134147
+      ],
+      "yield_std": 8432.885446121782
+    },
+    "Sunflower": {
+      "trend_coeffs": [
+        35.83226480836243,
+        -69314.53491289212
+      ],
+      "yield_std": 362.1006228579642
+    },
+    "Sweet Potatoes": {
+      "trend_coeffs": [
+        163.95674208144808,
+        -301953.26808446465
+      ],
+      "yield_std": 2987.5726286868303
+    },
+    "Tangerines": {
+      "trend_coeffs": [
+        97.25952941176388,
+        -178790.66925490022
+      ],
+      "yield_std": 2889.3317431262276
+    },
+    "Taro": {
+      "trend_coeffs": [
+        141.60855203619948,
+        -251834.73015083018
+      ],
+      "yield_std": 3655.1624249142656
+    },
+    "Tomatoes": {
+      "trend_coeffs": [
+        624.2414117647047,
+        -1214508.3518431345
+      ],
+      "yield_std": 2560.1837714662674
+    },
+    "Vetches": {
+      "trend_coeffs": [
+        5.458791242676736,
+        -8585.684742522762
+      ],
+      "yield_std": 187.75503542009014
+    },
+    "Walnuts": {
+      "trend_coeffs": [
+        -14.758391608391598,
+        34886.42109557107
+      ],
+      "yield_std": 185.23615236464272
+    },
+    "Watermelons": {
+      "trend_coeffs": [
+        48.82186425339232,
+        -71962.89133031403
+      ],
+      "yield_std": 2641.3660104638748
+    },
+    "Wheat": {
+      "trend_coeffs": [
+        96.56492307692295,
+        -187362.47274208115
+      ],
+      "yield_std": 406.68235352675964
+    }
+  },
+  "le_classes": [
+    "Apples",
+    "Apricots",
+    "Artichokes",
+    "Bananas",
+    "Barley",
+    "Beans (dry)",
+    "Beans (green)",
+    "Broad Beans (dry)",
+    "Broad Beans (green)",
+    "Cabbages",
+    "Carrots",
+    "Cauliflower & Broccoli",
+    "Chickpeas",
+    "Cotton",
+    "Cowpeas",
+    "Cucumbers",
+    "Dates",
+    "Eggplants",
+    "Figs",
+    "Flax",
+    "Garlic",
+    "Grapefruit",
+    "Grapes",
+    "Groundnuts",
+    "Jute",
+    "Lemons",
+    "Lentils",
+    "Lettuce",
+    "Linseed",
+    "Lupins",
+    "Maize",
+    "Mangoes",
+    "Melons",
+    "Okra",
+    "Olives",
+    "Onions",
+    "Oranges",
+    "Peaches",
+    "Pears",
+    "Peas (dry)",
+    "Peas (green)",
+    "Peppers (dry)",
+    "Peppers (green)",
+    "Plums",
+    "Potatoes",
+    "Pumpkins",
+    "Quinces",
+    "Rice",
+    "Rye",
+    "Sesame",
+    "Sorghum",
+    "Soybeans",
+    "Spices",
+    "Spinach",
+    "Stone Fruits (other)",
+    "Strawberries",
+    "String beans",
+    "Sugar beet",
+    "Sugar cane",
+    "Sunflower",
+    "Sweet Potatoes",
+    "Tangerines",
+    "Taro",
+    "Tomatoes",
+    "Vetches",
+    "Walnuts",
+    "Watermelons",
+    "Wheat"
+  ]
+}
