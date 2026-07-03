@@ -6,10 +6,11 @@
 
 ---
 
+Mansoura National University              Faculty of Engineering           **Artificial Intelligence Engineering Department**
+
+
 
 ### 🚀 Graduation Project 2025–2026
-
-Mansoura National University    Faculty of Engineering    **Artificial Intelligence Engineering Department**
 
 
 ---
