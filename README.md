@@ -1,777 +1,1791 @@
-# AI AgriVision 🌾🤖
-
 <div align="center">
 
-**An Intelligent Multi-Module Agricultural Diagnosis and Advisory System for Egyptian and Arab Agriculture**
+# 🌱 AI AgriVision
 
-[![Python](https://img.shields.io/badge/Python-3.9%2B-blue)](https://www.python.org/)
-[![PyTorch](https://img.shields.io/badge/PyTorch-2.1%2B-orange)](https://pytorch.org/)
-[![FastAPI](https://img.shields.io/badge/FastAPI-Latest-green)](https://fastapi.tiangolo.com/)
-[![License](https://img.shields.io/badge/License-MIT-yellow)](LICENSE)
-[![Arabic](https://img.shields.io/badge/Language-Arabic%20%7C%20English-brightgreen)]()
+### Intelligent Agricultural Decision Support Platform Powered by Artificial Intelligence
 
-<img src="docs/images/agrivision_banner.png" alt="AI AgriVision Banner" width="800"/>
+---
+
+<img src="assets/banner.png" width="100%">
+
+### 🚀 Graduation Project 2025–2026
+
+Faculty of Engineering  
+**Artificial Intelligence Engineering Department**
+
+Mansoura National University
+
+---
+
+<p align="center">
+
+<img src="https://img.shields.io/badge/Python-3.11-blue?style=for-the-badge&logo=python">
+
+<img src="https://img.shields.io/badge/PyTorch-DeepLearning-red?style=for-the-badge&logo=pytorch">
+
+<img src="https://img.shields.io/badge/FastAPI-Backend-009688?style=for-the-badge&logo=fastapi">
+
+<img src="https://img.shields.io/badge/Flask-REST_API-black?style=for-the-badge&logo=flask">
+
+<img src="https://img.shields.io/badge/FAISS-Vector_Search-orange?style=for-the-badge">
+
+<img src="https://img.shields.io/badge/Ollama-LLM-blueviolet?style=for-the-badge">
+
+<img src="https://img.shields.io/badge/Mistral-7B-success?style=for-the-badge">
+
+<img src="https://img.shields.io/badge/Knowledge_Graph-NetworkX-green?style=for-the-badge">
+
+<img src="https://img.shields.io/badge/License-MIT-success?style=for-the-badge">
+
+<img src="https://img.shields.io/badge/Status-Completed-brightgreen?style=for-the-badge">
+
+</p>
+
+---
+
+### 🌍 AI-Powered Agriculture for Egypt & the Arab World
+
+*Empowering Farmers with Explainable Artificial Intelligence*
 
 </div>
 
 ---
 
-## 📋 Table of Contents
+# 📖 Overview
 
-- [Overview](#-overview)
-- [Key Features](#-key-features)
-- [System Architecture](#-system-architecture)
-- [Six AI Modules](#-six-ai-modules)
-- [Installation](#-installation)
-- [Usage](#-usage)
-- [API Documentation](#-api-documentation)
-- [Datasets](#-datasets)
-- [Results & Performance](#-results--performance)
-- [Project Structure](#-project-structure)
-- [Technology Stack](#-technology-stack)
-- [Contributors](#-contributors)
-- [Supervisors](#-supervisors)
-- [Acknowledgments](#-acknowledgments)
-- [License](#-license)
-- [Future Work](#-future-work)
-- [Contact](#-contact)
+AI AgriVision is a next-generation intelligent agricultural platform that combines Computer Vision, Explainable AI (XAI), Large Language Models (LLMs), Retrieval-Augmented Generation (RAG), Knowledge Graphs, Environmental Monitoring, and Machine Learning into one unified ecosystem.
+
+The project was developed as a graduation project for the Artificial Intelligence Engineering Program at Mansoura National University to address the major challenges facing agriculture in Egypt and the Middle East.
+
+Unlike traditional agricultural applications that solve a single task, AI AgriVision integrates six specialized AI systems into one platform capable of assisting farmers, agricultural engineers, researchers, and decision-makers throughout the entire agricultural lifecycle.
+
+The system operates completely offline using local AI inference without relying on commercial cloud APIs, ensuring privacy, scalability, and low operational cost.
 
 ---
 
-## 🎯 Overview
+# 🌟 Project Highlights
 
-**AI AgriVision** is a comprehensive, locally-deployable intelligent agricultural platform specifically designed for the **Egyptian and Arab agricultural context**. The platform integrates **six complementary AI modules** that address different dimensions of agricultural intelligence — from plant disease diagnosis and bilingual agricultural Q&A to soil fertilization recommendations, crop yield prediction, environmental stress monitoring, and explainable treatment recommendations.
+✔ Plant Disease Diagnosis
 
-### Why AI AgriVision?
+✔ Pest Identification
 
-- 🌍 **Bilingual**: Full support for **Modern Standard Arabic (MSA)**, **Egyptian colloquial Arabic**, and **English**
-- 💻 **Locally Deployable**: Runs entirely on local hardware via **Ollama** — no cloud dependency, no data privacy concerns
-- 🧠 **Explainable AI**: Every prediction comes with visual explanations (Grad-CAM), economic justifications (BCR), or source citations (RAG)
-- 📊 **Validated Performance**: All six modules meet or exceed their target metrics on held-out test sets
-- 🌱 **Impact-Driven**: Projected **+20% yield increase**, **-32.5% crop loss reduction**, and **-20% input cost savings**
+✔ Nutrient Deficiency Detection
 
-> 🎓 **Graduation Project** — Artificial Intelligence Engineering Program  
-> 🏛️ **Faculty of Engineering, Mansoura National University**  
-> 📅 **Academic Year 2025–2026**
+✔ Explainable AI (GradCAM + Saliency Maps)
+
+✔ Arabic Agricultural Chatbot
+
+✔ Hybrid RAG System
+
+✔ Knowledge Graph Reasoning
+
+✔ Fine-tuned Arabic LLM
+
+✔ Fertilizer Recommendation
+
+✔ Crop Yield Prediction
+
+✔ Climate Scenario Analysis
+
+✔ Vegetation Stress Monitoring
+
+✔ Early Warning System
+
+✔ Offline AI Deployment
+
+✔ REST APIs
+
+✔ FastAPI Backend
+
+✔ Arabic & English Support
 
 ---
 
-## ✨ Key Features
+# 📑 Table of Contents
 
-| Feature | Description | Module |
-|---------|-------------|--------|
-| 🔬 **Plant Disease Diagnosis** | Dual-head CNN (EfficientNet-B3) for hierarchical classification into 3 categories + fine-grained diseases | M2 |
-| 💬 **Bilingual Agricultural Chat** | Hybrid RAG system with Knowledge Graph for Arabic/English agricultural Q&A | M5 |
-| 🧪 **Soil Fertilization Advisor** | QLoRA fine-tuned Mistral-7B for Arabic fertilizer recommendations | M4 |
-| 📈 **Crop Yield Prediction** | Random Forest + Gradient Boosting ensemble with climate scenario analysis | M3 |
-| 🚨 **Vegetation Stress Early Warning** | ML ensemble for monitoring Egypt's 31 protected areas | M6 |
-| 🧠 **Cognitive Reasoning Layer** | KG-augmented explainable treatment with economic severity grading | M1 |
+- Overview
+- Features
+- Architecture
+- Technologies
+- Modules
+- AI Models
+- Datasets
+- Installation
+- Quick Start
+- API
+- Results
+- Screenshots
+- Team
+- Citation
+- License
 
 ---
 
-## 🏗️ System Architecture
+# 🎥 Demo
+
+<p align="center">
+
+<img src="assets/demo.gif" width="90%">
+
+</p>
+
+---
+
+# 🖼 System Preview
+
+<p align="center">
+
+<img src="assets/dashboard.png" width="95%">
+
+</p>
+
+---
+
+# 🎯 Vision
+
+Agriculture is one of the world's most critical sectors, yet millions of farmers still rely on traditional practices and fragmented digital tools.
+
+AI AgriVision aims to bridge this gap by delivering a comprehensive AI-powered platform that provides:
+
+- Accurate disease diagnosis
+- Intelligent agricultural consultation
+- Climate-aware recommendations
+- Crop productivity prediction
+- Explainable decision-making
+- Real-time environmental monitoring
+
+The project specifically targets Egyptian agriculture while remaining adaptable to other countries through modular architecture and localized datasets.
+
+---
+
+# ❓ Why AI AgriVision?
+
+Many agricultural systems focus on solving only one problem.
+
+For example:
+
+- Disease detection only
+- Chatbot only
+- Yield prediction only
+- Fertilizer recommendation only
+
+AI AgriVision integrates all of these capabilities into one intelligent platform.
+
+This unified approach enables farmers to receive complete agricultural support without switching between multiple systems.
+
+---
+
+# ✨ Core Features
+
+## 🌿 Smart Plant Diagnosis
+
+- Disease Classification
+- Pest Detection
+- Nutrient Deficiency Detection
+- Multi-Class Classification
+- Explainable Predictions
+- Confidence Analysis
+
+---
+
+## 💬 Intelligent Agricultural Chat
+
+- Arabic Language
+- English Language
+- Egyptian Dialect
+- Context Awareness
+- Hybrid Retrieval
+- Multi-Agent Pipeline
+
+---
+
+## 🌾 Fertilizer Recommendation
+
+- Soil Analysis
+- Crop-aware Suggestions
+- NPK Recommendation
+- Seasonal Advice
+
+---
+
+## 📈 Yield Forecasting
+
+- Historical Analysis
+- Climate-aware Prediction
+- FAOSTAT Integration
+- Machine Learning Ensemble
+
+---
+
+## 🌍 Environmental Monitoring
+
+- NDVI Monitoring
+- Protected Areas
+- Stress Detection
+- Early Warning Alerts
+
+---
+
+## 🧠 Explainable AI
+
+Instead of providing predictions only, AI AgriVision explains **why** each decision was made.
+
+Explainability includes:
+
+- Grad-CAM
+- Feature Maps
+- Saliency Maps
+- Rule-Based Reasoning
+- Knowledge Graph Paths
+
+---
+
+# 🏗️ System Architecture
+
+<p align="center">
+
+<img src="assets/architecture.png">
+
+</p>
+
+The entire platform is built using a modular microservices architecture where each AI module can operate independently while communicating through REST APIs.
 
 ```
-┌─────────────────────────────────────────────────────────────────────┐
-│                    AI AgriVision — Central Platform                    │
-│                    (FastAPI + LangGraph + Ollama)                     │
-├─────────────────────────────────────────────────────────────────────┤
-│  ┌─────────┐  ┌─────────┐  ┌─────────┐  ┌─────────┐  ┌─────────┐  │
-│  │  M2     │  │  M5     │  │  M4     │  │  M3     │  │  M6     │  │
-│  │ AgriXAI │  │AgriChat │  │Agrivision│  │Egypt FAO│  │ EWS-PA  │  │
-│  │  CNN    │  │ Hybrid  │  │   LLM   │  │  Yield  │  │  EWS    │  │
-│  │Diagnosis│  │   RAG   │  │Fertilizer│  │Predictor│  │ Monitor │  │
-│  └────┬────┘  └────┬────┘  └────┬────┘  └────┬────┘  └────┬────┘  │
-│       │            │            │            │            │       │
-│  ┌────┴────────────┴────────────┴────────────┴────────────┴────┐  │
-│  │                    M1 — AgriXAI Cognitive Layer                 │  │
-│  │         (Knowledge Graph + Rules + Explainability)              │  │
-│  └─────────────────────────────────────────────────────────────────┘  │
-└─────────────────────────────────────────────────────────────────────┘
-                              │
-                              ▼
-                    ┌─────────────────┐
-                    │  React.js Web   │
-                    │    Frontend     │
-                    │ (Arabic/English)│
-                    └─────────────────┘
+                    User
+                      │
+                      ▼
+             Web Application
+                      │
+         ──────────────────────────
+                      │
+          REST API Gateway
+                      │
+     ┌────────┬────────┬────────┐
+     ▼        ▼        ▼
+ Plant AI  AgriChat  Fertilizer
+     │        │         │
+     └────┬───┴────┬────┘
+          ▼        ▼
+     Yield AI   Early Warning
+           │
+           ▼
+     Cognitive AI Engine
+           │
+           ▼
+      Final Recommendation
 ```
 
-### Deployment Architecture
-- **Local-first**: Single-machine deployment via Ollama
-- **Microservices**: Each module runs as independent Python process
-- **REST APIs**: Standardized JSON input/output across all modules
-- **Streaming**: Server-Sent Events (SSE) for conversational interactions
+The modular design allows independent development, testing, deployment, and scaling of every subsystem without affecting the others.
 
 ---
 
-## 🔬 Six AI Modules
+# 🛠️ Technology Stack
 
-### Module 2 — AgriXAI v2: Plant Disease Diagnosis System 🌿
+## Programming Languages
 
-**Technology**: EfficientNet-B3 Dual-Head CNN + XAI  
-**Primary Metric**: Category Accuracy **92.56%** (Target: ≥90%)
-
-A dual-head convolutional neural network that simultaneously performs:
-- **Category-level classification**: Disease / Pest / Deficiency
-- **Fine-grained classification**: Specific disease or pest species
-
-**Explainability Features**:
-- Grad-CAM heatmaps highlighting disease-affected regions
-- Gradient saliency maps
-- Intermediate feature maps (4 panels)
-- Confidence-gap warning for uncertain predictions
-
-```python
-# Example API Call
-POST /diagnose
-{
-  "image": "tomato_leaf.jpg"
-}
-
-# Response
-{
-  "category": "Disease",
-  "fine_class": "disease::tomato__late_blight",
-  "confidence": 0.923,
-  "grad_cam": "base64_encoded_image",
-  "saliency_map": "base64_encoded_image",
-  "warning": null
-}
-```
+- Python
+- JavaScript
+- HTML
+- CSS
 
 ---
 
-### Module 5 — AgriChat: Bilingual Hybrid RAG System 💬
+## AI Frameworks
 
-**Technology**: FAISS + Knowledge Graph + LLaMA 3  
-**Primary Metric**: Hybrid RAG Score **0.803** (+15.21% vs Vector-only)
-
-A bilingual Arabic-English agricultural advisory chatbot combining:
-- **Dense vector retrieval** via FAISS (28,613 text chunks)
-- **Knowledge Graph traversal** via NetworkX (4,243 nodes, 4,233 edges)
-- **Five-agent pipeline**: Classifier → Entity Extractor → FAISS Retriever → KG Traversal → Synthesis
-
-**Corpus**: 28,613 clean text chunks (80.6% English, 19.4% Arabic) from FAO, MALR Egypt, and agricultural reference books.
-
-```python
-# Example API Call
-POST /chat
-{
-  "message": "ما هي أفضل أسمدة النيتروجين للقمح؟",
-  "history": []
-}
-
-# Response
-{
-  "answer": "...",
-  "sources": ["chunk_1", "chunk_2", ...],
-  "graph_rels": ["Wheat → REQUIRES → Nitrogen", ...],
-  "response_time": "2.3s"
-}
-```
+- PyTorch
+- TensorFlow
+- Scikit-Learn
+- Transformers
 
 ---
 
-### Module 4 — AI Agrivision: Fertilization Recommendation System 🧪
+## Backend
 
-**Technology**: Mistral-7B-Instruct + QLoRA Fine-Tuning  
-**Primary Metric**: ROUGE-1 F1 **0.531** (Target: ≥0.50)
+- FastAPI
+- Flask
+- REST API
 
-A QLoRA fine-tuned large language model for **Arabic-language soil fertilization recommendations** tailored to Egyptian farming conditions.
+---
 
-**Training Data**: 61,791 records integrating:
-- Kaggle agricultural datasets
-- Egyptian Ministry of Agriculture and Land Reclamation (MALR) soil standards
-- FAO Egypt data
+## LLM Technologies
 
-```python
-# Example API Call
-POST /fertilize
-{
-  "crop": "طماطم",
-  "N": 80,
-  "P": 40,
-  "K": 90,
-  "pH": 6.5,
-  "location": "الدلتا"
-}
+- Ollama
+- Mistral-7B
+- QLoRA
 
-# Response
-{
-  "recommendation_ar": "...",
-  "recommendation_en": "...",
-  "confidence": 0.86
-}
+---
+
+## Retrieval
+
+- FAISS
+- Hybrid RAG
+- Vector Search
+
+---
+
+## Knowledge Representation
+
+- Knowledge Graph
+- NetworkX
+- Graph Traversal
+
+---
+
+## Explainability
+
+- GradCAM
+- SHAP
+- Saliency Maps
+
+---
+
+## Databases
+
+- JSON
+- FAISS Index
+- SQLite
+
+---
+
+## Deployment
+
+- Docker
+- Local Inference
+- Offline AI
+
+---
+
+# 📌 Repository Structure (Preview)
+
+```text
+AI-AgriVision/
+
+├── backend/
+├── frontend/
+├── api/
+├── models/
+├── datasets/
+├── notebooks/
+├── assets/
+├── docs/
+├── requirements.txt
+├── README.md
+└── LICENSE
 ```
 
 ---
 
-### Module 3 — Egypt FAO: Crop Yield Prediction System 📈
+## ⏭️ Next Part
 
-**Technology**: Random Forest + Gradient Boosting Ensemble  
-**Primary Metric**: R² = **0.9904** (Target: ≥0.95)
+In **Part 2**, we'll dive into each AI module in detail, including:
 
-An ensemble machine learning system trained on **FAOSTAT data (1961–2024)** for Egyptian crop yield forecasting.
+- 🌿 Plant Diagnosis
+- 💬 AgriChat
+- 🌾 Fertilizer Recommendation
+- Model architectures
+- AI pipelines
+- Screenshots
+- Explainability
+- Performance metrics
 
-**Climate Scenarios Analyzed**:
-| Scenario | Description | Avg Impact |
-|----------|-------------|------------|
-| Baseline | Historical average | 0% |
-| Heatwave +2°C | Temperature increase | -1.2% to -1.6% |
-| Drought -20% | Reduced inputs | -0.6% to -1.7% |
-| Combined Stress | Heatwave + Drought | -0.7% to -3.4% |
-| Tech + Green | Precision farming | +1.7% to +2.5% |
+# 🤖 AI Modules
 
-```python
-# Example API Call
-POST /predict_yield
-{
-  "crop": "wheat",
-  "year": 2026,
-  "climate_params": {
-    "temp_anomaly": 1.5,
-    "precipitation": 120,
-    "nitrogen_used": 150
-  }
-}
+AI AgriVision consists of six specialized Artificial Intelligence modules working together as a unified intelligent ecosystem.
 
-# Response
-{
-  "yield_kg_ha": 18450,
-  "confidence_interval": [18200, 18700],
-  "scenario": "expected"
-}
+Unlike traditional agricultural systems that focus on only one task, each module in AI AgriVision has a dedicated responsibility while seamlessly integrating with the others through REST APIs.
+
+---
+
+# 🌿 Module 1 — AI Plant Diagnosis (AgriXAI)
+
+<p align="center">
+<img src="assets/module1.png" width="90%">
+</p>
+
+## 🎯 Objective
+
+The Plant Diagnosis module is responsible for automatically identifying plant diseases, pests, and nutrient deficiencies from leaf images.
+
+The model was designed to assist farmers by providing fast, explainable, and highly accurate diagnoses using state-of-the-art deep learning.
+
+---
+
+## 🚀 Features
+
+- 🌱 Plant Disease Classification
+- 🐛 Pest Detection
+- 🟡 Nutrient Deficiency Detection
+- 🔥 Grad-CAM Explainability
+- 📊 Confidence Analysis
+- 📈 Feature Visualization
+- ⚠ Confidence Gap Warning
+- 📄 Automated Diagnosis Report
+
+---
+
+## 🧠 AI Architecture
+
+```
+Leaf Image
+     │
+     ▼
+Image Preprocessing
+     │
+     ▼
+EfficientNet-B3 Backbone
+     │
+     ▼
+Shared Feature Vector
+     │
+ ┌───────────────┐
+ ▼               ▼
+
+Category Head   Fine-Grained Head
+
+ ▼               ▼
+
+Disease        Specific Disease
+Pest           Pest Species
+Deficiency     Nutrient Type
 ```
 
 ---
 
-### Module 6 — EWS-PA v2.3: Vegetation Stress Early Warning System 🚨
+## 🏆 Deep Learning Model
 
-**Technology**: XGBoost + Random Forest + Logistic Regression Ensemble  
-**Primary Metric**: ROC-AUC = **0.817** (Target: ≥0.80)
+| Component | Technology |
+|------------|------------|
+| Backbone | EfficientNet-B3 |
+| Learning | Transfer Learning |
+| Optimizer | AdamW |
+| Loss | Focal Loss + Weighted Cross Entropy |
+| Input Size | 300×300 |
+| Framework | PyTorch |
 
-A three-branch fusion Early Warning System for **Egypt's 31 protected areas**, combining:
-- Rule-based EWS v1 logic
-- ML ensemble with Platt probability calibration
-- NDVI anomaly detection via per-area rolling baselines
+---
 
-**Dataset**: 5,192 labelled observations (7.9% positive stress rate)
+## 📊 Model Performance
 
-```python
-# Example API Call
-POST /ews/check
-{
-  "area_id": 27,
-  "ndvi": 0.35,
-  "weather": {
-    "temperature": 44.5,
-    "humidity": 30,
-    "soil_moisture": 0.025
-  }
-}
+| Metric | Value |
+|---------|--------|
+| Category Accuracy | **92.56%** |
+| Macro F1 Score | **0.9113** |
+| Validation Samples | 6,570 |
+| Disease Accuracy | 99.0% |
+| Pest Accuracy | 99.4% |
+| Deficiency Accuracy | 99.0% |
 
-# Response
-{
-  "stress_label": "Low Stress",
-  "probability": 0.096,
-  "severity": "Healthy",
-  "branch": "v2_high_conf",
-  "recommended_actions": ["Routine monitoring"]
-}
+---
+
+## 📈 Training Curves
+
+<p align="center">
+
+<img src="assets/training_curve.png" width="90%">
+
+</p>
+
+---
+
+## 📷 Explainable AI
+
+Unlike conventional CNN models, AI AgriVision explains every prediction.
+
+The Explainability Engine generates:
+
+- Grad-CAM
+- Saliency Maps
+- Feature Maps
+- Confidence Scores
+- Severity Analysis
+
+<p align="center">
+
+<img src="assets/xai.png" width="95%">
+
+</p>
+
+---
+
+## 📂 Supported Categories
+
+### Diseases
+
+- Apple Scab
+- Early Blight
+- Late Blight
+- Leaf Mold
+- Powdery Mildew
+- Mosaic Virus
+- Rust
+- Healthy Leaves
+
+---
+
+### Pests
+
+- Aphids
+- Whiteflies
+- Spider Mites
+- Armyworms
+- Thrips
+
+---
+
+### Nutrient Deficiencies
+
+- Nitrogen
+- Potassium
+- Magnesium
+- Zinc
+- Iron
+- Phosphorus
+
+---
+
+# 💬 Module 2 — AgriChat Hybrid RAG
+
+<p align="center">
+
+<img src="assets/module2.png" width="90%">
+
+</p>
+
+---
+
+## 🎯 Objective
+
+AgriChat is an intelligent bilingual agricultural assistant capable of answering agricultural questions using a Hybrid Retrieval-Augmented Generation (Hybrid RAG) architecture.
+
+Instead of relying only on Large Language Models, AgriChat retrieves trusted agricultural knowledge before generating responses.
+
+---
+
+## 🌍 Supported Languages
+
+🇪🇬 Arabic
+
+🇺🇸 English
+
+Egyptian Arabic Dialect
+
+Modern Standard Arabic
+
+---
+
+## 🚀 Features
+
+- Hybrid RAG
+- Semantic Search
+- Knowledge Graph
+- Multi-Agent Pipeline
+- Context Memory
+- Offline LLM
+- Streaming Response
+- Citation-based Answers
+
+---
+
+## 🏗 Architecture
+
+```
+User Question
+      │
+      ▼
+Language Detection
+      │
+      ▼
+Embedding Generation
+      │
+      ▼
+
+Hybrid Retrieval
+
+ ┌───────────────┐
+ │               │
+
+ ▼               ▼
+
+FAISS       Knowledge Graph
+
+ │               │
+
+ └──────┬────────┘
+
+        ▼
+
+Context Fusion
+
+        ▼
+
+Local LLM
+
+        ▼
+
+Final Answer
 ```
 
 ---
 
-### Module 1 — AgriXAI Cognitive: Explainable Reasoning Layer 🧠
+## 📊 Knowledge Base
 
-**Technology**: Knowledge Graph + Rule Engine + Economic Analysis  
-**Primary Metric**: 100% Test Pass Rate (7/7 scenarios)
+| Property | Value |
+|-----------|--------|
+| Documents | 15+ Books |
+| Chunks | 28,613 |
+| Languages | Arabic + English |
+| Embedding Size | 1024 |
+| Knowledge Graph Nodes | 4,243 |
+| Communities | 777 |
 
-A Knowledge Graph-augmented cognitive reasoning layer that transforms raw CNN predictions into **economically-grounded, actionable treatment recommendations**.
+---
 
-**Pipeline Stages**:
-1. Weather Acquisition (0.1ms)
-2. Differential Diagnosis (0.1ms)
-3. Rule Engine Execution (0.5ms)
-4. Deficiency Priority (0.1ms)
-5. Yield Impact Assessment (0.9ms)
-6. XAI Report Generation (5.0ms)
-7. JSON Envelope
+## 🔍 Retrieval Pipeline
 
-**Total Latency**: **9.8ms** (warm) — well under 15ms target
+1. Language Detection
 
-```python
-# Example API Call
-POST /explain
-{
-  "top_k_predictions": [
-    {"class": "disease::wheat__yellow_rust", "confidence": 0.48},
-    {"class": "disease::wheat__brown_rust", "confidence": 0.42}
-  ],
-  "weather": {"temperature": 13, "humidity": 92, "season": "spring"}
-}
+2. Query Embedding
 
-# Response
-{
-  "winner": "disease::wheat__yellow_rust",
-  "severity": "CRITICAL",
-  "BCR": 7.0,
-  "xai_report_html": "..."
-}
+3. FAISS Search
+
+4. Knowledge Graph Traversal
+
+5. Context Ranking
+
+6. Prompt Construction
+
+7. LLM Generation
+
+8. Response Validation
+
+---
+
+## 🏆 Performance
+
+| Metric | Score |
+|---------|--------|
+| Hybrid RAG | **0.803** |
+| Vector RAG | 0.697 |
+| Improvement | **+15.2%** |
+
+---
+
+## 📷 Retrieval Workflow
+
+<p align="center">
+
+<img src="assets/rag_pipeline.png" width="90%">
+
+</p>
+
+---
+
+## 🧠 AI Technologies
+
+- FAISS
+- NetworkX
+- Ollama
+- Mistral
+- Embedding Models
+- Hybrid Search
+- Knowledge Graph
+
+---
+
+# 🌾 Module 3 — Fertilizer Recommendation LLM
+
+<p align="center">
+
+<img src="assets/module3.png" width="90%">
+
+</p>
+
+---
+
+## 🎯 Objective
+
+This module provides intelligent fertilizer recommendations tailored specifically for Egyptian agriculture.
+
+Instead of using fixed rules, recommendations are generated using a fine-tuned Large Language Model trained on agricultural references and fertilizer guidelines.
+
+---
+
+## 🚀 Features
+
+- Soil Analysis
+- NPK Recommendation
+- Seasonal Recommendation
+- Crop-Specific Advice
+- Arabic Responses
+- Explainable Output
+
+---
+
+## 🧠 LLM Architecture
+
+```
+Farmer Question
+        │
+        ▼
+
+Prompt Engineering
+
+        ▼
+
+Mistral-7B
+
+        ▼
+
+QLoRA Adapter
+
+        ▼
+
+Agricultural Knowledge
+
+        ▼
+
+Recommendation Generator
 ```
 
 ---
 
-## 🚀 Installation
+## ⚙ Model Details
 
-### Prerequisites
+| Property | Value |
+|-----------|--------|
+| Base Model | Mistral-7B |
+| Fine-tuning | QLoRA |
+| Quantization | 4-bit |
+| Framework | HuggingFace Transformers |
+| Deployment | Ollama |
 
-- Python 3.9+
-- CUDA-capable GPU (recommended) or CPU fallback
-- 8GB+ RAM (16GB recommended)
-- 6GB+ VRAM for LLM inference (with 4-bit quantization)
+---
 
-### Step 1: Clone the Repository
+## 📊 Evaluation
+
+| Metric | Value |
+|---------|--------|
+| ROUGE-1 | 0.531 |
+| ROUGE-2 | 0.292 |
+| ROUGE-L | 0.509 |
+
+---
+
+## 📷 Recommendation Example
+
+<p align="center">
+
+<img src="assets/fertilizer_example.png" width="95%">
+
+</p>
+
+---
+
+## 🌟 Why This Module?
+
+Traditional fertilizer systems rely on predefined rules.
+
+AI AgriVision goes beyond static recommendations by combining:
+
+- Large Language Models
+- Egyptian Agricultural Knowledge
+- Fine-Tuning
+- Local AI Inference
+- Explainable Recommendations
+
+This allows farmers to receive personalized and context-aware fertilizer advice in natural Arabic or English.
+
+---
+
+# 🔄 End-to-End Pipeline (Modules 1–3)
+
+```text
+Leaf Image / User Question
+            │
+            ▼
+   AI Plant Diagnosis
+            │
+            ▼
+   Disease Classification
+            │
+            ▼
+      AgriChat Hybrid RAG
+            │
+            ▼
+ Knowledge Retrieval + LLM
+            │
+            ▼
+ Fertilizer Recommendation
+            │
+            ▼
+ Final Agricultural Report
+```
+
+---
+
+# 📸 Module Gallery
+
+<p align="center">
+
+<img src="assets/module1_dashboard.png" width="32%">
+
+<img src="assets/module2_dashboard.png" width="32%">
+
+<img src="assets/module3_dashboard.png" width="32%">
+
+</p>
+
+---
+
+# ▶️ Coming Next
+
+In **Part 3**, we'll cover:
+
+- 📈 Module 4 — Crop Yield Prediction
+- 🌍 Module 5 — Early Warning System
+- 🧠 Module 6 — Cognitive AI Engine
+- 📊 Experimental Results
+- 📂 Project Structure
+- ⚙️ Installation Guide
+- 🚀 Quick Start
+- 🔌 REST API Documentation
+
+# 📈 Module 4 — Crop Yield Prediction
+
+<p align="center">
+<img src="assets/module4.png" width="90%">
+</p>
+
+---
+
+## 🎯 Objective
+
+Crop Yield Prediction is designed to estimate future agricultural production using historical crop production records, weather conditions, and climate indicators.
+
+The module helps farmers, agricultural organizations, and policy makers estimate future productivity under different environmental scenarios.
+
+Unlike traditional regression models, AI AgriVision combines multiple machine learning algorithms into a high-performance ensemble capable of modeling complex agricultural patterns.
+
+---
+
+# 🌟 Features
+
+- Yield Prediction
+- Climate Scenario Simulation
+- Historical Trend Analysis
+- Multi-Crop Support
+- Feature Importance
+- Ensemble Learning
+- Production Forecasting
+
+---
+
+# 🏗 Prediction Pipeline
+
+```
+
+Historical Data
+│
+▼
+
+Weather Data
+│
+▼
+
+Climate Features
+│
+▼
+
+Data Cleaning
+│
+▼
+
+Feature Engineering
+│
+▼
+
+Machine Learning Ensemble
+│
+▼
+
+Yield Prediction
+│
+▼
+
+Visualization Dashboard
+
+```
+
+---
+
+# 📊 Dataset
+
+| Dataset | Source |
+|----------|---------|
+| FAOSTAT | FAO |
+| Climate Data | ERA5 |
+| Temperature | NASA POWER |
+| Rainfall | World Bank Climate |
+| Crop Production | FAOSTAT |
+
+---
+
+# 🤖 Machine Learning Models
+
+- Random Forest
+
+- Gradient Boosting
+
+- Ensemble Model
+
+- Feature Selection
+
+- Cross Validation
+
+---
+
+# 📈 Results
+
+| Metric | Value |
+|---------|---------|
+| Random Forest R² | **0.9904** |
+| Gradient Boosting R² | **0.9886** |
+| Ensemble R² | **0.9921** |
+| RMSE | 381 kg/ha |
+
+---
+
+<p align="center">
+
+<img src="assets/yield_prediction_dashboard.png" width="90%">
+
+</p>
+
+---
+
+# 🌍 Module 5 — Early Warning System
+
+<p align="center">
+
+<img src="assets/module5.png" width="90%">
+
+</p>
+
+---
+
+## 🎯 Objective
+
+The Early Warning System continuously monitors vegetation health across protected areas using satellite imagery and machine learning.
+
+It detects abnormal vegetation stress before it becomes visually apparent, allowing early intervention.
+
+---
+
+# 🚀 Features
+
+- NDVI Analysis
+- Satellite Monitoring
+- Stress Detection
+- Protected Area Monitoring
+- Early Alerts
+- Environmental Dashboard
+
+---
+
+# 🌍 Data Sources
+
+- Sentinel-2
+
+- Landsat
+
+- MODIS
+
+- ERA5 Climate
+
+- NDVI
+
+---
+
+# AI Pipeline
+
+```
+
+Satellite Images
+│
+▼
+
+NDVI Calculation
+│
+▼
+
+Feature Engineering
+│
+▼
+
+Machine Learning
+│
+▼
+
+Stress Classification
+│
+▼
+
+Early Warning Alert
+
+```
+
+---
+
+# Models
+
+- XGBoost
+
+- Random Forest
+
+- Logistic Regression
+
+- Ensemble Learning
+
+---
+
+# Performance
+
+| Metric | Score |
+|----------|---------|
+| ROC-AUC | **0.817** |
+| PR-AUC | 0.674 |
+| Protected Areas | 31 |
+
+---
+
+<p align="center">
+
+<img src="assets/ews_dashboard.png" width="90%">
+
+</p>
+
+---
+
+# 🧠 Module 6 — Cognitive AI Engine
+
+<p align="center">
+
+<img src="assets/module6.png" width="90%">
+
+</p>
+
+---
+
+## 🎯 Objective
+
+The Cognitive Layer acts as the reasoning engine of AI AgriVision.
+
+Instead of relying only on neural networks, it combines symbolic reasoning, expert knowledge, rule-based systems, and Knowledge Graph traversal to generate explainable agricultural recommendations.
+
+---
+
+# Capabilities
+
+- Differential Diagnosis
+
+- Treatment Recommendation
+
+- Severity Analysis
+
+- Rule Engine
+
+- Knowledge Graph Reasoning
+
+- Explainable AI
+
+- Multi-hop Inference
+
+---
+
+# Cognitive Pipeline
+
+```
+
+CNN Prediction
+│
+▼
+
+Confidence Score
+│
+▼
+
+Knowledge Graph
+│
+▼
+
+Rule Engine
+│
+▼
+
+Agricultural Rules
+│
+▼
+
+Treatment Recommendation
+
+```
+
+---
+
+# Rule Engine
+
+Examples:
+
+✔ Disease Severity
+
+✔ Fungicide Recommendation
+
+✔ Irrigation Adjustment
+
+✔ Fertilizer Optimization
+
+✔ Weather Awareness
+
+✔ Crop Growth Stage
+
+---
+
+<p align="center">
+
+<img src="assets/cognitive_engine.png" width="90%">
+
+</p>
+
+---
+
+# 📊 Overall Project Performance
+
+| Module | Metric | Result |
+|------------|-----------------|-----------|
+| Plant Diagnosis | Accuracy | 92.56% |
+| Hybrid RAG | Score | 0.803 |
+| Yield Prediction | R² | 0.9904 |
+| Early Warning | ROC-AUC | 0.817 |
+| Cognitive Layer | Test Pass | 100% |
+
+---
+
+# 📁 Project Structure
+
+```
+
+AI-AgriVision/
+
+├── api/
+│
+├── backend/
+│
+├── frontend/
+│
+├── models/
+│ ├── cnn/
+│ ├── rag/
+│ ├── llm/
+│ ├── yield/
+│ ├── ews/
+│ └── cognitive/
+│
+├── datasets/
+│
+├── notebooks/
+│
+├── assets/
+│
+├── docs/
+│
+├── config/
+│
+├── requirements.txt
+│
+├── app.py
+│
+├── main.py
+│
+└── README.md
+
+```
+
+---
+
+# ⚙ Installation
+
+## Clone Repository
 
 ```bash
-git clone https://github.com/yourusername/AI-AgriVision.git
+git clone https://github.com/USERNAME/AI-AgriVision.git
+```
+
+---
+
+## Enter Project
+
+```bash
 cd AI-AgriVision
 ```
 
-### Step 2: Create Virtual Environment
+---
+
+## Create Environment
 
 ```bash
 python -m venv venv
+```
 
-# On Windows
+Windows
+
+```bash
 venv\Scripts\activate
+```
 
-# On Linux/Mac
+Linux
+
+```bash
 source venv/bin/activate
 ```
 
-### Step 3: Install Dependencies
+---
+
+## Install Packages
 
 ```bash
 pip install -r requirements.txt
 ```
 
-### Step 4: Install Ollama (for Local LLM Inference)
+---
+
+## Run Backend
 
 ```bash
-# On Linux
-curl -fsSL https://ollama.com/install.sh | sh
-
-# On macOS
-brew install ollama
-
-# On Windows
-# Download from https://ollama.com/download
+python app.py
 ```
 
-### Step 5: Pull Required Models
+or
 
 ```bash
-ollama pull llama3:8b
-ollama pull qwen2.5:3b
-ollama pull mistral:7b
-```
-
-### Step 6: Download Datasets
-
-```bash
-# Run the dataset preparation script
-python scripts/download_datasets.py
-
-# Or manually download from:
-# - PlantVillage: https://github.com/spMohanty/PlantVillage-Dataset
-# - FAOSTAT: https://www.fao.org/faostat
-# - MALR Egypt publications (see docs/DATASETS.md)
-```
-
-### Step 7: Start the Platform
-
-```bash
-# Start Ollama server
-ollama serve
-
-# In a new terminal, start the main platform
-python main.py
-
-# Or start individual modules
-python modules/m2_cnn/app.py      # Plant Diagnosis
-python modules/m5_rag/app.py       # AgriChat
-python modules/m4_llm/app.py      # Fertilization
-python modules/m3_yield/app.py    # Yield Prediction
-python modules/m6_ews/app.py      # Early Warning
-python modules/m1_cognitive/app.py # Cognitive Layer
-```
-
-The web interface will be available at: **http://localhost:8000**
-
----
-
-## 💻 Usage
-
-### Web Interface
-
-1. Open your browser and navigate to `http://localhost:8000`
-2. Select your preferred language (Arabic/English)
-3. Choose a module from the dashboard:
-   - 🔬 **Analyze a Plant** — Upload leaf images for disease diagnosis
-   - 🧪 **Soil Analysis** — Get fertilizer recommendations
-   - 📈 **Yield Predictor** — Forecast crop yields under climate scenarios
-   - 💬 **AI Chat** — Ask agricultural questions in Arabic or English
-   - 🚨 **Early Warning System** — Monitor protected area vegetation stress
-
-### API Usage
-
-All modules expose REST APIs. See the [API Documentation](#-api-documentation) section for details.
-
-### Example: Complete Workflow
-
-```python
-import requests
-
-# Step 1: Diagnose a plant image
-with open("tomato_leaf.jpg", "rb") as f:
-    response = requests.post(
-        "http://localhost:8000/diagnose",
-        files={"image": f}
-    )
-diagnosis = response.json()
-
-# Step 2: Get explainable treatment recommendation
-explain_response = requests.post(
-    "http://localhost:8000/explain",
-    json={
-        "top_k_predictions": [
-            {"class": diagnosis["fine_class"], "confidence": diagnosis["confidence"]}
-        ],
-        "weather": {"temperature": 25, "humidity": 60}
-    }
-)
-treatment = explain_response.json()
-
-# Step 3: Get detailed advisory from AgriChat
-chat_response = requests.post(
-    "http://localhost:8000/chat",
-    json={
-        "message": f"How to treat {diagnosis['fine_class']} organically?",
-        "history": []
-    }
-)
-advisory = chat_response.json()
-
-print(f"Diagnosis: {diagnosis['fine_class']}")
-print(f"Severity: {treatment['severity']}")
-print(f"Treatment: {advisory['answer']}")
+uvicorn main:app --reload
 ```
 
 ---
 
-## 📚 API Documentation
-
-### Base URL
-```
-http://localhost:8000
-```
-
-### Endpoints
-
-| Method | Endpoint | Module | Description |
-|--------|----------|--------|-------------|
-| POST | `/diagnose` | M2 | Plant disease diagnosis from image |
-| POST | `/chat` | M5 | Bilingual agricultural Q&A |
-| POST | `/chat/stream` | M5 | Streaming conversational response |
-| POST | `/fertilize` | M4 | Soil fertilization recommendation |
-| POST | `/predict_yield` | M3 | Crop yield prediction |
-| POST | `/ews/check` | M6 | Vegetation stress detection |
-| POST | `/explain` | M1 | Explainable treatment recommendation |
-| GET | `/health` | ALL | System health check |
-
-### Detailed API Docs
-
-Interactive API documentation is available at:
-- **Swagger UI**: `http://localhost:8000/docs`
-- **ReDoc**: `http://localhost:8000/redoc`
-
----
-
-## 📊 Datasets
-
-### Module 2 — Plant Disease (AgriXAI v2)
-
-| Dataset | Size | Source |
-|---------|------|--------|
-| PlantVillage | 54,000 images | [GitHub](https://github.com/spMohanty/PlantVillage-Dataset) |
-| Cassava Leaf Disease | 21,397 images | [Kaggle](https://www.kaggle.com/c/cassava-leaf-disease-classification) |
-| Wheat Disease | 3,602 images | [Kaggle](https://www.kaggle.com/datasets/xpwu95/wheat-disease-dataset) |
-| IP102 (Pests) | 75,222 images | [GitHub](https://github.com/xpwu95/IP102) |
-| Custom Pest Collection | ~5,000 images | Internal collection |
-| PlantDoc Deficiency | ~2,500 images | [GitHub](https://github.com/pratikkayal/PlantDoc-Dataset) |
-| MALR Egypt Deficiency | ~1,800 images | Internal field collection |
-
-### Module 5 — AgriChat Corpus
-
-| Source | Language | Chunks |
-|--------|----------|--------|
-| FAO Crop Production & Plant Protection | English | ~4,200 |
-| MALR Egypt Extension Manual | Arabic | ~3,100 |
-| Integrated Pest Management Handbook | English+Arabic | ~2,400 |
-| Soil Fertility and Fertilization Guide | Arabic | ~2,100 |
-| Plant Pathology Reference (Arabic) | English | ~1,900 |
-| FAOSTAT Technical Documentation | Arabic | ~1,800 |
-| Irrigation and Water Management (Egypt) | English/Arabic | ~10,313 |
-| **Total** | **Bilingual** | **28,613** |
-
-### Module 4 — Fertilization
-
-| Source | Records | Features |
-|--------|---------|----------|
-| Kaggle Crop Recommendation | 2,200 | N, P, K, temp, humidity, pH, rainfall |
-| Kaggle Fertilizer Prediction | 99 | Soil + crop → fertilizer |
-| Kaggle Fertilizer Recommendation | 26,741 | NPK + soil + fertilizer mapping |
-| Mendeley Soil Dataset | 3,142 | Soil properties + recommendations |
-| FAO Egypt | 1,958 | FAOSTAT-aligned Egyptian data |
-| MALR Egypt Synthetic | 25,451 | Egyptian NPK + soil + crop |
-| **Total** | **61,791** | **23 features** |
-
-### Module 3 — Yield Prediction
-
-| Dataset | Records | Years | Source |
-|---------|---------|-------|--------|
-| FAOSTAT Crop Production Egypt | 15,000+ | 1961–2024 | [FAO](https://www.fao.org/faostat) |
-| FAO Temperature Anomaly | ~2,500 | 1961–2024 | [FAO](https://www.fao.org/faostat) |
-| FAO Precipitation Data | ~2,500 | 1961–2024 | [FAO](https://www.fao.org/faostat) |
-| FAO Pesticide Use Egypt | ~1,500 | 1990–2024 | [FAO](https://www.fao.org/faostat) |
-| FAO Fertilizer Consumption | ~1,500 | 1990–2024 | [FAO](https://www.fao.org/faostat) |
-
-### Module 6 — EWS-PA
-
-| Data Type | Source | Coverage |
-|-----------|--------|----------|
-| NDVI Index | Landsat-8/9 + MODIS | 2010–2024, 31 PAs |
-| Temperature | ERA5 Reanalysis | 2010–2024, monthly |
-| Precipitation | ERA5 Reanalysis | 2010–2024, monthly |
-| Soil Moisture | ERA5-Land | 2010–2024, monthly |
-| Solar Radiation | ERA5 Reanalysis | 2010–2024, monthly |
-| PA Boundaries | IUCN WDPA | 31 areas |
-
----
-
-## 📈 Results & Performance
-
-### Consolidated Module Performance
-
-| Module | System | Primary Metric | Achieved | Target | Status |
-|--------|--------|----------------|----------|--------|--------|
-| M2 | AgriXAI CNN | Category Accuracy | **92.56%** | ≥ 90% | ✅ Exceeded |
-| M2 | AgriXAI CNN | Category F1-Score | **0.9113** | ≥ 0.90 | ✅ Exceeded |
-| M5 | AgriChat RAG | Hybrid RAG Score | **0.803** | ≥ 0.75 | ✅ Exceeded |
-| M5 | AgriChat RAG | vs Vector Baseline | **+15.21%** | — | ✅ Exceeded |
-| M4 | Agrivision LLM | ROUGE-1 F1 | **0.531** | ≥ 0.50 | ✅ Met |
-| M4 | Agrivision LLM | Confidence Score | **86%** | ≥ 80% | ✅ Met |
-| M3 | Egypt FAO Yield | R-squared (RF) | **0.9904** | ≥ 0.95 | ✅ Exceeded |
-| M3 | Egypt FAO Yield | RMSE (RF) | **405 kg/ha** | < 500 | ✅ Met |
-| M6 | EWS-PA v2.3 | PR-AUC | **0.6736** | ≥ 0.60 | ✅ Met |
-| M6 | EWS-PA v2.3 | ROC-AUC | **0.8167** | ≥ 0.80 | ✅ Met |
-| M1 | AgriXAI Cognitive | Test Pass Rate | **100%** (7/7) | 100% | ✅ Perfect |
-| M1 | AgriXAI Cognitive | Pipeline Latency | **9.8ms** | < 15ms | ✅ Met |
-
-### Agricultural Impact Projections (2025–2035)
-
-| Metric | Expected Scenario | Optimistic Scenario |
-|--------|-------------------|---------------------|
-| Yield Increase | **+20%** | +35% |
-| Crop Loss Reduction | **-32.5%** | — |
-| Input Cost Savings | **-20%** | — |
-| Water Efficiency | **+30%** | — |
-
----
-
-## 📁 Project Structure
+## Open Browser
 
 ```
-AI-AgriVision/
-├── 📁 modules/
-│   ├── m1_cognitive/          # AgriXAI Cognitive Reasoning Layer
-│   │   ├── knowledge_graph/
-│   │   ├── rule_engine/
-│   │   ├── differential.py
-│   │   └── app.py
-│   │
-│   ├── m2_cnn/                # AgriXAI v2 Plant Diagnosis
-│   │   ├── models/
-│   │   │   └── efficientnet_b3_dualhead.py
-│   │   ├── training/
-│   │   ├── xai/
-│   │   │   ├── gradcam.py
-│   │   │   └── saliency.py
-│   │   └── app.py
-│   │
-│   ├── m3_yield/              # Egypt FAO Crop Yield Prediction
-│   │   ├── data/
-│   │   ├── models/
-│   │   │   ├── random_forest.py
-│   │   │   └── gradient_boosting.py
-│   │   ├── climate_scenarios/
-│   │   └── app.py
-│   │
-│   ├── m4_llm/                # AI Agrivision Fertilization LLM
-│   │   ├── qlora/
-│   │   ├── inference/
-│   │   └── app.py
-│   │
-│   ├── m5_rag/                # AgriChat Hybrid RAG
-│   │   ├── corpus/
-│   │   │   └── s5_final.json
-│   │   ├── embeddings/
-│   │   ├── knowledge_graph/
-│   │   │   └── knowledge_graph.json
-│   │   ├── agents/
-│   │   └── app.py
-│   │
-│   └── m6_ews/                # EWS-PA v2.3 Early Warning
-│       ├── data/
-│       ├── models/
-│       │   ├── xgboost_model.py
-│       │   ├── random_forest.py
-│       │   └── logistic_regression.py
-│       └── app.py
-│
-├── 📁 frontend/               # React.js Web Interface
-│   ├── src/
-│   ├── public/
-│   └── package.json
-│
-├── 📁 docs/                   # Documentation
-│   ├── images/
-│   ├── API.md
-│   ├── DATASETS.md
-│   └── DEPLOYMENT.md
-│
-├── 📁 scripts/                # Utility Scripts
-│   ├── download_datasets.py
-│   ├── build_kg.py
-│   └── evaluate_all.py
-│
-├── 📁 tests/                  # Test Suites
-│   ├── unit/
-│   ├── integration/
-│   └── smoke/
-│
-├── 📁 notebooks/              # Jupyter Notebooks
-│   ├── analysis/
-│   └── visualization/
-│
-├── main.py                    # Central Platform Entry Point
-├── config.yaml                # Global Configuration
-├── requirements.txt           # Python Dependencies
-├── Dockerfile                 # Container Configuration
-├── docker-compose.yml         # Multi-Service Orchestration
-└── README.md                  # This File
+http://127.0.0.1:8000
 ```
 
 ---
 
-## 🛠️ Technology Stack
+# 🔌 REST API
 
-| Layer | Technology | Version | Purpose |
-|-------|-----------|---------|---------|
-| **ML Framework** | PyTorch | 2.1+ | CNN training and inference |
-| **LLM Inference** | Ollama | Latest | Local LLM serving |
-| **LLM Framework** | LangChain / LangGraph | 0.1+ | Agent orchestration |
-| **Vector Search** | FAISS (faiss-cpu) | 1.7+ | Semantic retrieval |
-| **Graph Library** | NetworkX | 3.x | Knowledge Graph traversal |
-| **Embeddings** | HuggingFace sentence-transformers | Latest | Multilingual embeddings |
-| **Web Framework** | Flask 2.x / FastAPI | Latest | REST API serving |
-| **Explainability** | SHAP (TreeExplainer) | Latest | Feature importance |
-| **Data Processing** | Pandas + NumPy + Scikit-learn | Latest | ML pipelines |
-| **Visualization** | Matplotlib + D3.js + Chart.js | Latest | Figures and dashboards |
-| **Frontend** | React.js + Tailwind CSS | 18+ | Web interface |
-| **Training Platform** | Google Colab (T4/A100 GPU) | — | Model training |
-| **Deployment** | Docker + Ollama | — | Local deployment |
+## Plant Diagnosis
+
+```
+POST /predict
+```
 
 ---
 
-## 👥 Contributors
+## AgriChat
 
-This project was developed by the AI AgriVision Team from the **Artificial Intelligence Engineering Program, Faculty of Engineering, Mansoura National University**:
-
-| Name | Role | Contributions |
-|------|------|---------------|
-| **Ibrahim Mohamed Mohamed Amin** | Team Lead | System Architecture, Module Integration |
-| **Mohamed Osama Kamel** | ML Engineer | Module 2 (CNN), Module 1 (Cognitive) |
-| **Mohamed Mahmoud Ashraf Hosny Ellakany** | NLP Engineer | Module 5 (RAG), Module 4 (LLM) |
-| **Mohamed Ashraf Fawzy Aldanin** | Data Engineer | Module 3 (Yield), Data Pipeline |
-| **Mohamed Ali Ali Ail Shatla** | Backend Engineer | Module 6 (EWS), API Development |
-| **Badr Islam Ibrahim Elewa** | Frontend Engineer | React.js Web Interface, UI/UX |
+```
+POST /chat
+```
 
 ---
 
-## 👨‍🏫 Supervisors
+## Fertilizer Recommendation
 
-- **Dr. Mohamed Zaki** — Associate Professor, AI Engineering Program
-- **Eng. Mennatallah Ouf** — Teaching Assistant, AI Engineering Program
-
----
-
-## 🙏 Acknowledgments
-
-We express our deepest gratitude to:
-
-- **Prof. Dr. Ehab Hani Abdelhay** — Acting Dean, Faculty of Engineering, Mansoura National University
-- **Faculty of Engineering, Mansoura National University** — For providing an exceptional academic environment
-- **Food and Agriculture Organization (FAO)** — For maintaining the FAOSTAT database
-- **Egyptian Ministry of Agriculture and Land Reclamation (MALR)** — For crop-specific fertilization guidelines
-- **Open-Source Community** — PyTorch, Hugging Face Transformers, LangChain, Ollama, FAISS, NetworkX, Scikit-learn, XGBoost
+```
+POST /fertilizer
+```
 
 ---
 
-## 📄 License
+## Yield Prediction
 
-This project is licensed under the **MIT License** — see the [LICENSE](LICENSE) file for details.
-
----
-
-## 🔮 Future Work
-
-### Short-Term (6–12 months)
-- [ ] Expand AgriChat corpus with 20–30 additional agricultural reference books
-- [ ] Collect 500+ additional stress-positive observations for EWS-PA
-- [ ] Develop React Native mobile application with offline caching
-- [ ] Implement CrossEncoder reranker for Knowledge Graph relations
-
-### Medium-Term (1–2 years)
-- [ ] Real-time IoT integration for EWS-PA (soil sensors, meteorological stations)
-- [ ] Federated learning deployment across agricultural extension offices
-- [ ] Image-integrated RAG (accept crop images alongside text queries)
-- [ ] Arabic dialect expansion (Saidi, Alexandrian, etc.)
-
-### Long-Term Research Directions
-- [ ] Satellite time series integration (Sentinel-2 NDVI) for sub-field yield mapping
-- [ ] Knowledge Graph alignment with FAO AGROVOC multilingual thesaurus
-- [ ] Cross-border extension to Jordanian, Libyan, and Moroccan agriculture
+```
+POST /yield
+```
 
 ---
 
-## 📞 Contact
+## Early Warning
 
-For questions, suggestions, or collaboration inquiries:
+```
+POST /ews
+```
 
-- 📧 **Email**: agrivision@mnu.edu.eg
-- 🌐 **Website**: [https://agrivision.mnu.edu.eg](https://agrivision.mnu.edu.eg)
-- 🐙 **GitHub**: [https://github.com/yourusername/AI-AgriVision](https://github.com/yourusername/AI-AgriVision)
-- 📱 **LinkedIn**: [AI AgriVision Project](https://linkedin.com/company/agrivision)
+---
+
+## Cognitive Recommendation
+
+```
+POST /recommend
+```
+
+---
+
+# 📸 Screenshots
+
+<p align="center">
+
+<img src="assets/home.png" width="48%">
+
+<img src="assets/chat.png" width="48%">
+
+</p>
+
+<p align="center">
+
+<img src="assets/predict.png" width="48%">
+
+<img src="assets/dashboard.png" width="48%">
+
+</p>
+
+---
+
+# 📦 Requirements
+
+- Python 3.11+
+- PyTorch
+- FastAPI
+- Flask
+- FAISS
+- Ollama
+- Transformers
+- Scikit-learn
+- NetworkX
+- OpenCV
+- NumPy
+- Pandas
+- Matplotlib
+- Pillow
+- Uvicorn
+
+---
+
+## ⏭️ Next (Final Part)
+
+The final section will include:
+
+- 📚 Research Contributions
+- 🏆 Achievements
+- 🛣️ Future Roadmap
+- 🔬 Future Research
+- 👨‍💻 Team Members
+- 👨‍🏫 Supervisors
+- 🙏 Acknowledgments
+- 📖 Citation (BibTeX)
+- 📄 License
+- ⭐ Support the Project
+- 💙 Footer with GitHub-style design
+
+# 🏆 Research Contributions
+
+AI AgriVision is more than a collection of AI models; it is a unified intelligent agricultural ecosystem designed to solve multiple real-world agricultural challenges.
+
+The project contributes to agricultural artificial intelligence by integrating several advanced technologies into a single modular platform.
+
+## Major Contributions
+
+✔ Multi-Module AI Platform
+
+✔ Explainable Plant Disease Diagnosis
+
+✔ Hybrid Retrieval-Augmented Generation (Hybrid RAG)
+
+✔ Knowledge Graph Reasoning
+
+✔ Fine-Tuned Agricultural Large Language Model
+
+✔ Climate-Aware Crop Yield Prediction
+
+✔ Vegetation Stress Early Warning System
+
+✔ Offline Local AI Deployment
+
+✔ Arabic & English Agricultural Intelligence
+
+✔ RESTful Microservice Architecture
+
+---
+
+# 🚀 Innovation
+
+AI AgriVision combines technologies that are usually implemented separately into one intelligent platform.
+
+Instead of building independent applications, the project integrates six AI systems that communicate together through REST APIs.
+
+The platform combines:
+
+- Computer Vision
+- Explainable AI
+- Large Language Models
+- Hybrid RAG
+- Knowledge Graphs
+- Machine Learning
+- Environmental Intelligence
+- Decision Support Systems
+
+This unified architecture enables comprehensive agricultural assistance from disease diagnosis to treatment recommendations, yield forecasting, and environmental monitoring.
+
+---
+
+# 📊 Achievements
+
+| Category | Achievement |
+|-----------|-------------|
+| AI Modules | 6 |
+| Supported Languages | Arabic & English |
+| Deep Learning Models | 10+ |
+| ML Models | 8+ |
+| Knowledge Graph Nodes | 4,243 |
+| Text Chunks | 28,613 |
+| Plant Classes | 100+ |
+| Explainability Methods | 4 |
+| REST APIs | 6 |
+| Platform Type | Offline AI |
+
+---
+
+# 📈 Experimental Results
+
+| Module | Metric | Result |
+|----------|----------------|-------------|
+| Plant Diagnosis | Category Accuracy | **92.56%** |
+| Plant Diagnosis | Macro F1 | **0.9113** |
+| Hybrid RAG | Overall Score | **0.803** |
+| Crop Yield Prediction | R² | **0.9904** |
+| Early Warning System | ROC-AUC | **0.817** |
+| Cognitive AI | Test Pass Rate | **100%** |
+
+---
+
+# 🌍 Applications
+
+AI AgriVision can be applied in various agricultural domains, including:
+
+🌾 Smart Farming
+
+🍅 Precision Agriculture
+
+🌱 Plant Disease Diagnosis
+
+🛰 Environmental Monitoring
+
+📈 Agricultural Forecasting
+
+🏛 Government Decision Support
+
+🎓 Agricultural Education
+
+🔬 Research & Development
+
+---
+
+# 🛣 Roadmap
+
+## Version 1.0
+
+- Plant Diagnosis
+- Hybrid RAG
+- Fertilizer LLM
+- Yield Prediction
+- Early Warning
+- Explainable AI
+
+---
+
+## Version 2.0
+
+- Mobile Application
+
+- Cloud Synchronization
+
+- GPS Integration
+
+- Drone Monitoring
+
+- Weather API
+
+- Satellite Live Monitoring
+
+---
+
+## Version 3.0
+
+- Autonomous Farm Assistant
+
+- Voice Assistant
+
+- IoT Sensor Integration
+
+- Multi-Country Deployment
+
+- Smart Irrigation
+
+- Reinforcement Learning
+
+---
+
+# 🔬 Future Work
+
+Several enhancements are planned for future versions of AI AgriVision.
+
+## Artificial Intelligence
+
+- Vision Transformers (ViT)
+
+- ConvNeXt
+
+- SAM (Segment Anything)
+
+- GPT-OSS / Llama 3
+
+- Multi-modal LLMs
+
+---
+
+## Agriculture
+
+- Fruit Detection
+
+- Weed Detection
+
+- Soil Analysis
+
+- Irrigation Optimization
+
+- Greenhouse Monitoring
+
+---
+
+## Computer Vision
+
+- Object Detection
+
+- Segmentation
+
+- Video Analysis
+
+- Drone Imaging
+
+---
+
+## Explainable AI
+
+- SHAP Dashboard
+
+- LIME
+
+- Interactive Heatmaps
+
+- Attention Visualization
+
+---
+
+## Deployment
+
+- Docker
+
+- Kubernetes
+
+- CI/CD
+
+- Azure
+
+- AWS
+
+---
+
+# 📚 Publications
+
+If this project contributes to your work, please cite:
+
+```text
+AI AgriVision:
+An Intelligent Multi-Module Agricultural Decision Support Platform
+Graduation Project
+Faculty of Engineering
+Artificial Intelligence Engineering Program
+Mansoura National University
+2025–2026
+```
+
+---
+
+# 📖 Citation (BibTeX)
+
+```bibtex
+@misc{AIAgriVision2026,
+  title={AI AgriVision: Intelligent Agricultural Decision Support Platform},
+  author={
+    Ibrahim Mohamed Amin and
+    Badr Islam Elawa and
+    Mohamed Osama Kamel and
+    Mohamed Ashraf ElDanen and
+    Mohamed Ali Shatla and
+    Mahmoud Ashraf Hosny
+  },
+  year={2026},
+  institution={Mansoura National University},
+  type={Graduation Project}
+}
+```
+
+---
+
+# 👨‍💻 Team
+
+<div align="center">
+
+| Team Member | Role |
+|-------------|------|
+| Ibrahim Mohamed Amin | AI Engineer |
+| Badr Islam Elawa | AI Engineer |
+| Mohamed Osama Kamel | AI Engineer |
+| Mohamed Ashraf ElDanen | AI Engineer |
+| Mohamed Ali Shatla | AI Engineer |
+| Mahmoud Ashraf Hosny | AI Engineer |
+
+</div>
+
+---
+
+# 👨‍🏫 Supervisors
+
+<div align="center">
+
+### Academic Supervision
+
+**Dr. Mohamed Zaki**
+
+**Eng. Mennatallah Awf**
+
+Faculty of Engineering
+
+Mansoura National University
+
+</div>
+
+---
+
+# 🛠 Technologies Used
+
+### Programming
+
+- Python
+- JavaScript
+- HTML
+- CSS
+
+### AI
+
+- PyTorch
+- TensorFlow
+- Transformers
+- Scikit-learn
+- FAISS
+- Ollama
+- Mistral
+- NetworkX
+- XGBoost
+- Random Forest
+
+### Backend
+
+- FastAPI
+- Flask
+
+### Deployment
+
+- Docker
+- GitHub
+- Git
+
+---
+
+# 🤝 Contributing
+
+Contributions are welcome!
+
+If you'd like to improve AI AgriVision:
+
+1. Fork the repository
+2. Create a new feature branch
+3. Commit your changes
+4. Push to your branch
+5. Open a Pull Request
+
+---
+
+# ⭐ Support
+
+If you found this project useful, please consider giving it a ⭐ on GitHub.
+
+It helps the project reach more developers and researchers.
+
+---
+
+# 🙏 Acknowledgments
+
+Special thanks to:
+
+- Mansoura National University
+- Faculty of Engineering
+- Artificial Intelligence Engineering Department
+- Our supervisors
+- Open-source AI community
+- FAO
+- PlantVillage
+- Kaggle Community
+- Hugging Face
+- PyTorch Team
+
+---
+
+# 📄 License
+
+This project is released under the **MIT License**.
+
+You are free to use, modify, and distribute the project under the terms of the license.
+
+See the **LICENSE** file for details.
+
+---
+
+# 📬 Contact
+
+For questions, suggestions, or collaborations:
+
+📧 Email: your-email@example.com
+
+💼 LinkedIn: Your LinkedIn
+
+🌐 GitHub: https://github.com/yourusername
 
 ---
 
 <div align="center">
 
-**Made with ❤️ in Egypt 🇪🇬 for Arab Farmers 🌾**
+# 🌱 AI AgriVision
 
-*"Bridging Technology & Traditional Agriculture"*
+### Empowering Agriculture with Artificial Intelligence
+
+*"From Diagnosis to Decision — One Intelligent Platform."*
+
+---
+
+⭐ **If you like this project, don't forget to Star the repository!**
+
+Made with ❤️ by the AI AgriVision Team
+
+© 2026 AI AgriVision. All Rights Reserved.
 
 </div>
