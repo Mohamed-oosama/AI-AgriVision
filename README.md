@@ -1,4 +1,5 @@
 <div align="center">
+  
 # 🌾 AI AgriVision
 
 ### Intelligent Agricultural Decision Support Platform Powered by Artificial Intelligence
