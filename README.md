@@ -1,6 +1,3 @@
-<div align="center">
-
-<img src="https://readme-typing-svg.demolab.com?font=Fira+Code&size=30&pause=1000&color=2ECC71&center=true&vCenter=true&width=700&lines=🌿+AI+AgriVision;Intelligent+Agricultural+AI+Platform;From+Diagnosis+to+Decision" alt="Typing SVG" />
 
 # 🌾 AI AgriVision
 
@@ -769,8 +766,7 @@ See the [LICENSE](LICENSE) file for full details.
 
 For questions, suggestions, or collaborations:
 
-- 📧 **Email:** [your-email@example.com](mailto:your-email@example.com)
-- 💼 **LinkedIn:** [Your LinkedIn](https://linkedin.com)
+- 💼 **LinkedIn:** [LinkedIn](https://www.linkedin.com/in/mohamed-osama-kamel/)
 - 🌐 **GitHub:** [Mohamed-oosama](https://github.com/Mohamed-oosama)
 
 ---
