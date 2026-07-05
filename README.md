@@ -740,18 +740,37 @@ Special thanks to:
 
 ---
 
-## 🤝 Contributing
+# Contributing
 
 Contributions are welcome! To contribute:
 
-1. **Fork** the repository
-2. Create a new branch: `git checkout -b feature/your-feature`
-3. **Commit** your changes: `git commit -m "Add: your feature description"`
-4. **Push** to your branch: `git push origin feature/your-feature`
-5. Open a **Pull Request** and describe your changes
+1. Fork the repository.
+2. Create a new branch:
+   ```bash
+   git checkout -b feature/your-feature
+   ```
+3. Commit your changes:
+   ```bash
+   git commit -m "Add: your feature description"
+   ```
+4. Push to your branch:
+   ```bash
+   git push origin feature/your-feature
+   ```
+5. Open a Pull Request and describe your changes.
 
 Please follow the existing code style and add docstrings to new functions.
 
+---
+
+## Contributors
+
+We would like to thank everyone who contributed to this project:
+
+- **Mohamed Ali Shatla** – https://github.com/Mohamed-Ali-Shatla
+- **Ibrahim Amin** – https://github.com/ibrahim-amin0
+- **Badr** – https://github.com/badr00000
+- **Mohamed Osama** – https://github.com/Mohamed-oosama
 ---
 
 ## 📄 License
