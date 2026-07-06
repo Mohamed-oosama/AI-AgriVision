@@ -233,12 +233,7 @@ These images demonstrate the system modules and AI interfaces.
 
 ## 📄 Graduation Project Report
 
-A full detailed documentation of the project is available.
-
-📘 **Download the full thesis here:**
-
-👉 [📥 AI-AgriVision Graduation Thesis](docs/AI_AgriVision.pdf)
-
+<iframe src="docs/graduation_thesis.pdf" width="100%" height="600px"></iframe>
 ---
 
 ## 🎯 Purpose
