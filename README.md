@@ -234,8 +234,25 @@ These images demonstrate the system modules and AI interfaces.
 ## 📄 Graduation Project Report
 
 <p align="center">
-  <img src="images/pdf-preview.png" width="400"/>
+  <img src="images/AI_AgriVision.pdf.png" width="450"/>
 </p>
+
+<p align="center">
+  📘 Full Graduation Thesis for AI-AgriVision Project
+</p>
+
+<p align="center">
+  👉 <a href="docs/AI_AgriVision.pdf"><b>📥 Open / Download Full Report</b></a>
+</p>
+
+---
+
+### 📌 The report includes:
+- 🧠 AI system architecture  
+- 🌱 Plant disease detection models  
+- 📊 Soil & yield analysis  
+- ⚠️ Early warning system design  
+- 🚀 Full implementation details  
 
 👉 [📥 Open Full Thesis](docs/AI_AgriVision.pdf)
 ---
