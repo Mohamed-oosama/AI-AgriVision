@@ -181,13 +181,7 @@ Most agricultural AI solutions are isolated:
 # 📸 AI-AgriVision Screenshots
 
 This folder contains all screenshots and visual assets for the AI-AgriVision project.
-
----
-# 📸 AI-AgriVision - Project Screenshots
-
-This folder contains all visual assets for the **AI-AgriVision** project.
-
-These images demonstrate the system modules, AI interfaces, and outputs.
+These images demonstrate the system modules and AI interfaces.
 
 ---
 ## 🏠 Homepage
@@ -195,6 +189,11 @@ These images demonstrate the system modules, AI interfaces, and outputs.
   <img src="images/AI-AgriVision-Homepage.png" width="800"/>
 </p>
 
+---
+## 🌿 Plant Disease Diagnosis
+<p align="center">
+  <img src="images/Plant-Diagnosis-Interface.png" width="800"/>
+</p>
 ---
 
 ## 💬 AI Chat Assistant
@@ -225,18 +224,9 @@ These images demonstrate the system modules, AI interfaces, and outputs.
 
 ---
 
-## 🌿 Plant Disease Diagnosis
-<p align="center">
-  <img src="images/Plant-Diagnosis-Interface.png" width="800"/>
-</p>
----
 
 ## 📌 Note
 These images are used in the main project documentation (README.md) to showcase the AI system features.
----
-
-## 📌 Note
-These images are used for documentation and demonstration purposes in the main project README.
 ---
 
 ## 🎯 Purpose
