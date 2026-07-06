@@ -234,15 +234,11 @@ These images demonstrate the system modules and AI interfaces.
 ## 📄 Graduation Project Report
 
 <p align="center">
-  <img src="images/AI_AgriVision.pdf.png" width="450"/>
+  📘 Full Graduation Book for AI-AgriVision Project
 </p>
 
 <p align="center">
-  📘 Full Graduation Thesis for AI-AgriVision Project
-</p>
-
-<p align="center">
-  👉 <a href="docs/AI_AgriVision.pdf"><b>📥 Open / Download Full Report</b></a>
+  👉 <a href="docs/AI_AgriVision.pdf"><b>📥 Open / Download Full Book</b></a>
 </p>
 
 ---
