@@ -1,6 +1,6 @@
 <div align="center">
   
-## 🌾 AI AgriVision
+# 🌾 AI AgriVision
 
 ### Intelligent Agricultural Decision Support Platform Powered by Artificial Intelligence
 
@@ -178,6 +178,72 @@ Most agricultural AI solutions are isolated:
 </table>
 
 ---
+# 📸 AI-AgriVision Screenshots
+
+This folder contains all screenshots and visual assets for the AI-AgriVision project.
+These images demonstrate the system modules and AI interfaces.
+
+---
+## 🏠 Homepage
+<p align="center">
+  <img src="images/AI-AgriVision-Homepage.png" width="800"/>
+</p>
+
+---
+## 🌿 Plant Disease Diagnosis
+<p align="center">
+  <img src="images/Plant-Diagnosis-Interface.png" width="800"/>
+</p>
+---
+
+## 💬 AI Chat Assistant
+<p align="center">
+  <img src="images/AI-AgriVision-Chat-Interface.png" width="800"/>
+</p>
+
+---
+
+## 🌱 Soil Analysis System
+<p align="center">
+  <img src="images/AI-AgriVision-Soil-Analysis.png" width="800"/>
+</p>
+
+---
+
+## 📈 Crop Yield Prediction
+<p align="center">
+  <img src="images/AI-AgriVision-Yield-Predictor.png" width="800"/>
+</p>
+
+---
+
+## ⚠️ Early Warning System Dashboard
+<p align="center">
+  <img src="images/EWS-Simulation-Dashboard.png" width="800"/>
+</p>
+
+---
+
+
+## 📌 Note
+These images are used in the main project documentation (README.md) to showcase the AI system features.
+---
+
+## 🎯 Purpose
+
+These images are used in the main project README to visually demonstrate:
+- System functionality
+- AI modules
+- User interfaces
+- Overall project workflow
+
+---
+
+## 📌 Note
+
+Do not modify or delete these images unless updating the project documentation.
+
+All images are used in the main repository README for presentation purposes.
 
 ## 🏗 System Architecture
 
