@@ -231,9 +231,14 @@ These images demonstrate the system modules and AI interfaces.
 
 ---
 
+## 📄 Graduation Project Report
 
-## 📌 Note
-These images are used in the main project documentation (README.md) to showcase the AI system features.
+A full detailed documentation of the project is available.
+
+📘 **Download the full thesis here:**
+
+👉 [📥 AI-AgriVision Graduation Thesis](docs/AI_AgriVision.pdf)
+
 ---
 
 ## 🎯 Purpose
