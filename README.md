@@ -211,7 +211,7 @@ These images demonstrate the system modules, AI interfaces, and outputs.
 
 ---
 
-## 📈 Yield Prediction Model
+## 📈 Crop Yield Prediction
 <p align="center">
   <img src="images/AI-AgriVision-Yield-Predictor.png" width="800"/>
 </p>
