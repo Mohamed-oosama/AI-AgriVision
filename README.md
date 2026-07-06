@@ -178,6 +178,49 @@ Most agricultural AI solutions are isolated:
 </table>
 
 ---
+# 📸 Project Screenshots - AI-AgriVision
+
+This folder contains all visual assets and screenshots for the **AI-AgriVision** project.
+
+---
+
+## 📂 Contents
+
+### 🏠 Homepage
+- AI AgriVision main landing page showcasing system overview.
+
+### 💬 Chat Interface
+- AI agricultural assistant interface for farmer support and queries.
+
+### 🌱 Soil Analysis
+- Dashboard for analyzing soil conditions and providing recommendations.
+
+### 📈 Yield Prediction
+- Model output visualization for crop yield prediction.
+
+### ⚠️ Early Warning System
+- Simulation dashboard for environmental risk alerts.
+
+### 🌿 Plant Diagnosis
+- AI-based plant disease detection interface.
+
+---
+
+## 🎯 Purpose
+
+These images are used in the main project README to visually demonstrate:
+- System functionality
+- AI modules
+- User interfaces
+- Overall project workflow
+
+---
+
+## 📌 Note
+
+Do not modify or delete these images unless updating the project documentation.
+
+All images are used in the main repository README for presentation purposes.
 
 ## 🏗 System Architecture
 
