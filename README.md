@@ -61,6 +61,13 @@
 
 ## 🌍 Overview
 
+### 🌾 Overview of Egyptian Agriculture
+<p align="center">
+  <img src="images/Overview of Egyptian Agriculture .jpg" width="700"/>
+</p>
+
+---
+
 **AI AgriVision** is a next-generation intelligent agricultural platform that unifies six specialized AI systems into one cohesive ecosystem.
 
 The project was developed as a graduation project for the **Artificial Intelligence Engineering Program** at **Mansoura National University** to address the major challenges facing agriculture in Egypt and the broader Arab world.
@@ -305,6 +312,13 @@ graph TD
     XAI --> RPT
 ```
 
+### 🌿 Plant Diagnosis Architecture
+<p align="center">
+  <img src="images/Plant Diagnosis Architecture.png" width="700"/>
+</p>
+
+---
+
 #### Supported Classes
 
 | Category | Examples |
@@ -350,6 +364,13 @@ graph TD
     KG --> CTX
     CTX --> LLM --> ANS
 ```
+
+### 🏗️ AgriChat Architecture
+<p align="center">
+  <img src="images/AgriChat Architecture.png" width="700"/>
+</p>
+
+---
 
 #### Retrieval Pipeline
 
