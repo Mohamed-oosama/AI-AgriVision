@@ -768,9 +768,13 @@ Please follow the existing code style and add docstrings to new functions.
 We would like to sincerely thank everyone who contributed to the development of this project:
 
 **Mohamed Ali Shatla** – https://github.com/Mohamed-Ali-Shatla
+
 **Ibrahim Amin** – https://github.com/ibrahim-amin0
+
 **Badr** – https://github.com/badr00000
+
 **Mohamed Osama** –   https://github.com/Mohamed-oosama
+
 **Mahmoud Ashraf Hosny** –   https://github.com/mahmoudashrafhosny
 
 ## 📄 License
