@@ -190,35 +190,45 @@ This folder contains all visual assets for the **AI-AgriVision** project.
 These images demonstrate the system modules, AI interfaces, and outputs.
 
 ---
-
 ## 🏠 Homepage
-<img src="AI-AgriVision-Homepage.png" width="650"/>
+<p align="center">
+  <img src="images/AI-AgriVision-Homepage.png" width="800"/>
+</p>
 
 ---
 
-## 💬 Chat Interface
-<img src="AI-AgriVision-Chat-Interface.png" width="650"/>
+## 💬 AI Chat Assistant
+<p align="center">
+  <img src="images/AI-AgriVision-Chat-Interface.png" width="800"/>
+</p>
 
 ---
 
-## 🌱 Soil Analysis
-<img src="AI-AgriVision-Soil-Analysis.png" width="650"/>
+## 🌱 Soil Analysis System
+<p align="center">
+  <img src="images/AI-AgriVision-Soil-Analysis.png" width="800"/>
+</p>
 
 ---
 
-## 📈 Yield Prediction
-<img src="AI-AgriVision-Yield-Predictor.png" width="650"/>
+## 📈 Yield Prediction Model
+<p align="center">
+  <img src="images/AI-AgriVision-Yield-Predictor.png" width="800"/>
+</p>
 
 ---
 
 ## ⚠️ Early Warning System Dashboard
-<img src="EWS-Simulation-Dashboard.png" width="650"/>
+<p align="center">
+  <img src="images/EWS-Simulation-Dashboard.png" width="800"/>
+</p>
 
 ---
 
-## 🌿 Plant Diagnosis Interface
-<img src="Plant-Diagnosis-Interface.png" width="650"/>
-
+## 🌿 Plant Disease Diagnosis
+<p align="center">
+  <img src="images/Plant-Diagnosis-Interface.png" width="800"/>
+</p>
 ---
 
 ## 📌 Note
