@@ -233,7 +233,11 @@ These images demonstrate the system modules and AI interfaces.
 
 ## 📄 Graduation Project Report
 
-<iframe src="docs/graduation_thesis.pdf" width="100%" height="600px"></iframe>
+<p align="center">
+  <img src="images/pdf-preview.png" width="400"/>
+</p>
+
+👉 [📥 Open Full Thesis](docs/AI_AgriVision.pdf)
 ---
 
 ## 🎯 Purpose
