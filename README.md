@@ -258,16 +258,6 @@ These images demonstrate the system modules and AI interfaces.
 
 ---
 
-### 📌 The report includes:
-- 🧠 AI system architecture  
-- 🌱 Plant disease detection models  
-- 📊 Soil & yield analysis  
-- ⚠️ Early warning system design  
-- 🚀 Full implementation details  
-
-👉 [📥 Open Full Thesis](docs/AI_AgriVision.pdf)
----
-
 ## 🎯 Purpose
 
 These images are used in the main project README to visually demonstrate:
@@ -886,24 +876,11 @@ Please follow the existing code style and add docstrings to new functions.
 
 We would like to sincerely thank everyone who contributed to the development of this project:
 
-**Mohamed Ali Shatla** – https://github.com/Mohamed-Ali-Shatla
-
-**Ibrahim Amin** – https://github.com/ibrahim-amin0
-
-**Badr** – https://github.com/badr00000
-
-**Mohamed Osama** –   https://github.com/Mohamed-oosama
-
-**Mahmoud Ashraf Hosny** –   https://github.com/mahmoudashrafhosny
-
-## 📄 License
-
-This project is licensed under the **MIT License**.
-You are free to use, modify, and distribute this project under the terms of the license.
-
-See the [LICENSE](LICENSE) file for full details.
-
----
+**Mohamed Ali Shatla** – https://github.com/Mohamed-Ali-Shatla  
+**Ibrahim Amin** – https://github.com/ibrahim-amin0  
+**Badr** – https://github.com/badr00000  
+**Mohamed Osama** –   https://github.com/Mohamed-oosama  
+**Mahmoud Ashraf Hosny** –   https://github.com/mahmoudashrafhosny  
 
 ## 📬 Contact
 
@@ -919,6 +896,16 @@ For questions, suggestions, or collaborations:
 | Ibrahim Amin | [Linkedin](https://www.linkedin.com/in/ibrahim-amin-aie0101010101/) |
 | Mahmoud Ellakany | [Linkedin](https://www.linkedin.com/in/mahmoud-ashraf-hosny/) |
 | Mohammed Ashraf | [Linkedin](https://www.linkedin.com/in/mohammed-ashraf-449a782a3/) |
+
+
+## 📄 License
+
+This project is licensed under the **MNU License**.
+You are free to use, modify, and distribute this project under the terms of the license.
+
+See the [LICENSE](LICENSE) file for full details.
+
+---
 
 ---
 
