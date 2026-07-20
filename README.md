@@ -61,28 +61,26 @@ Faculty of Engineering • Artificial Intelligence Engineering Program<br>
 </div>
 
 ---
-
 # 📚 Table of Contents
 
-- 🌍 Overview
-- ❓ Why AI AgriVision?
-- 🌟 Key Features
-- 🖼️ Project Gallery
-- 📑 Project Brochure
-- 📘 Graduation Thesis
-- 🏗️ System Architecture
-- 🤖 AI Modules
-- 💻 Technology Stack
-- 📁 Project Structure
-- ⚙️ Installation
-- 🚀 Quick Start
-- 🔌 REST API
-- 📚 Research Contributions
-- 🛣️ Roadmap
-- 👥 Team Members
-- 📖 Citation
-- 📄 License
-
+- [🌍 Overview](#-overview)
+- [❓ Why AI AgriVision?](#-why-ai-agrivision)
+- [🌟 Key Features](#-key-features)
+- [🖼️ Project Gallery](#-project-gallery)
+- [📑 Project Brochure](#-project-brochure)
+- [📘 Graduation Thesis](#-graduation-project-thesis)
+- [🏗️ System Architecture](#-system-architecture)
+- [🤖 AI Modules](#-ai-modules)
+- [💻 Technology Stack](#-technology-stack)
+- [📁 Project Structure](#-project-structure)
+- [⚙️ Installation](#-installation)
+- [🚀 Quick Start](#-quick-start)
+- [🔌 REST API](#-rest-api)
+- [📚 Research Contributions](#-research-contributions)
+- [🛣️ Roadmap](#-roadmap)
+- [👥 Team Members](#-team-members)
+- [📖 Citation](#-citation)
+- [📄 License](#-license)
 ---
 
 ## 🚀 Quick Navigation
@@ -954,27 +952,26 @@ Please follow the existing code style and add docstrings to new functions.
 ## Contributors
 
 We would like to sincerely thank everyone who contributed to the development of this project:
-
-**Mohamed Ali Shatla** – https://github.com/Mohamed-Ali-Shatla  
-**Ibrahim Amin** – https://github.com/ibrahim-amin0  
-**Badr** – https://github.com/badr00000  
-**Mohamed Osama** –   https://github.com/Mohamed-oosama  
-**Mahmoud Ashraf Hosny** –   https://github.com/mahmoudashrafhosny  
-
 ## 📬 Contact
 
 For questions, suggestions, or collaborations:
 
-## 👥 Contributors
+## 👥 Team Members
 
-| Name | LinkedIn |
-|------|----------|
-| Mohamed Osama | [Linkedin](https://www.linkedin.com/in/mohamed-osama-kamel/) |
-| Badr Islam | [Linkedin](https://www.linkedin.com/in/badr-islam-4881b12a4/ar/) |
-| Mohamed Ali Shatla | [Linkedin](https://www.linkedin.com/in/mohamed-ali-shatla-88734b362/) |
-| Ibrahim Amin | [Linkedin](https://www.linkedin.com/in/ibrahim-amin-aie0101010101/) |
-| Mahmoud Ellakany | [Linkedin](https://www.linkedin.com/in/mahmoud-ashraf-hosny/) |
-| Mohammed Ashraf | [Linkedin](https://www.linkedin.com/in/mohammed-ashraf-449a782a3/) |
+| Member | GitHub | LinkedIn |
+|---------|--------|----------|
+| Mohamed Osama | [GitHub](https://github.com/Mohamed-oosama) | [LinkedIn](https://www.linkedin.com/in/mohamed-osama-kamel/) |
+| Badr Islam | [GitHub](https://github.com/badr00000) | [LinkedIn](https://www.linkedin.com/in/badr-islam-4881b12a4/ar/) |
+| Mohamed Ali Shatla | [GitHub](https://github.com/Mohamed-Ali-Shatla) | [LinkedIn](https://www.linkedin.com/in/mohamed-ali-shatla-88734b362/) |
+| Ibrahim Amin | [GitHub](https://github.com/ibrahim-amin0) | [LinkedIn](https://www.linkedin.com/in/ibrahim-amin-aie0101010101/) |
+| Mahmoud Ashraf Hosny | [GitHub](https://github.com/mahmoudashrafhosny) | [LinkedIn](https://www.linkedin.com/in/mahmoud-ashraf-hosny/) |
+| Mohammed Ashraf | — | [LinkedIn](https://www.linkedin.com/in/mohammed-ashraf-449a782a3/) |
+
+---
+
+## 📬 Contact
+
+For questions, suggestions, or collaborations:
 
 
 ## 📄 License
