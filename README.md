@@ -969,10 +969,6 @@ For questions, suggestions, or collaborations:
 
 ---
 
-## 📬 Contact
-
-For questions, suggestions, or collaborations:
-
 
 ## 📄 License
 
