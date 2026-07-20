@@ -894,12 +894,16 @@ See the [LICENSE](LICENSE) file for full details.
 
 For questions, suggestions, or collaborations:
 
-- 💼 **LinkedIn:** [LinkedIn - Mohamed Osama](https://www.linkedin.com/in/mohamed-osama-kamel/)
-- 💼 **LinkedIn:** [LinkedIn - BADR ISLAM]((https://www.linkedin.com/in/badr-islam-4881b12a4/ar/?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3BTPOWoDBtQ%2FaEn6FrhYhxXQ%3D%3D))
-- 💼 **LinkedIn:** [LinkedIn - Mohamed Ali Shatla]((https://www.linkedin.com/in/mohamed-ali-shatla-88734b362/?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3BGMka3F7tR%2BynvlYMTnHqdg%3D%3D))
-- 💼 **LinkedIn:** [LinkedIn - ‏Ibrahim Amin‏]((https://www.linkedin.com/in/ibrahim-amin-aie0101010101/?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3BKGQFkG8zRU%2BJt6YXeiwY%2Bg%3D%3D))
-- 💼 **LinkedIn:** [LinkedIn - Mahmoud Ellakany]((https://www.linkedin.com/in/mahmoud-ashraf-hosny/?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3B1qwQM%2FK9RvS%2Bu1TIEZyxrQ%3D%3D))
-- 💼 **LinkedIn:** [LinkedIn - Mohammed Ashraf]((https://www.linkedin.com/in/mohammed-ashraf-449a782a3/?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3Bin3NQNOYQt23fM%2Fr12oNMg%3D%3D))
+## 👥 Contributors
+
+| Name | LinkedIn |
+|------|----------|
+| Mohamed Osama | [Profile](https://www.linkedin.com/in/mohamed-osama-kamel/) |
+| Badr Islam | [Profile](https://www.linkedin.com/in/badr-islam-4881b12a4/ar/) |
+| Mohamed Ali Shatla | [Profile](https://www.linkedin.com/in/mohamed-ali-shatla-88734b362/) |
+| Ibrahim Amin | [Profile](https://www.linkedin.com/in/ibrahim-amin-aie0101010101/) |
+| Mahmoud Ellakany | [Profile](https://www.linkedin.com/in/mahmoud-ashraf-hosny/) |
+| Mohammed Ashraf | [Profile](https://www.linkedin.com/in/mohammed-ashraf-449a782a3/) |
 
 ---
 
