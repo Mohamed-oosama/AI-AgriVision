@@ -230,7 +230,19 @@ These images demonstrate the system modules and AI interfaces.
 </p>
 
 ---
+## 📄 Project Brochure
 
+<p align="center">
+  <img src="images/brochure-preview.png" alt="Project Brochure Preview" width="700"/>
+</p>
+
+<p align="center">
+  <a href="docs/Project_Brochure.pdf">
+    📥 <strong>Open Project Brochure (PDF)</strong>
+  </a>
+</p>
+
+---
 ## 📄 Graduation Project Report
 
 <p align="center">
