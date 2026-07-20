@@ -1,61 +1,105 @@
 <div align="center">
-  
+
 # 🌾 AI AgriVision
 
 ### Intelligent Agricultural Decision Support Platform Powered by Artificial Intelligence
 
 <p align="center">
-  <img src="https://img.shields.io/badge/Python-3.11+-3776AB?style=for-the-badge&logo=python&logoColor=white"/>
-  <img src="https://img.shields.io/badge/PyTorch-EE4C2C?style=for-the-badge&logo=pytorch&logoColor=white"/>
-  <img src="https://img.shields.io/badge/FastAPI-009688?style=for-the-badge&logo=fastapi&logoColor=white"/>
-  <img src="https://img.shields.io/badge/Ollama-000000?style=for-the-badge&logo=ollama&logoColor=white"/>
-  <img src="https://img.shields.io/badge/Docker-2496ED?style=for-the-badge&logo=docker&logoColor=white"/>
+
+<img src="https://img.shields.io/badge/Python-3.11+-3776AB?style=for-the-badge&logo=python&logoColor=white"/>
+<img src="https://img.shields.io/badge/PyTorch-EE4C2C?style=for-the-badge&logo=pytorch&logoColor=white"/>
+<img src="https://img.shields.io/badge/FastAPI-009688?style=for-the-badge&logo=fastapi&logoColor=white"/>
+<img src="https://img.shields.io/badge/Ollama-000000?style=for-the-badge&logo=ollama&logoColor=white"/>
+<img src="https://img.shields.io/badge/Docker-2496ED?style=for-the-badge&logo=docker&logoColor=white"/>
+
 </p>
 
 <p align="center">
-  <img src="https://img.shields.io/badge/License-MIT-green?style=flat-square"/>
-  <img src="https://img.shields.io/badge/Status-Active-brightgreen?style=flat-square"/>
-  <img src="https://img.shields.io/badge/Version-1.0.0-blue?style=flat-square"/>
-  <img src="https://img.shields.io/badge/Language-Arabic%20%7C%20English-orange?style=flat-square"/>
-  <img src="https://img.shields.io/badge/Deployment-Offline%20AI-purple?style=flat-square"/>
+
+<img src="https://img.shields.io/github/stars/Mohamed-oosama/AI-AgriVision?style=flat-square"/>
+<img src="https://img.shields.io/github/forks/Mohamed-oosama/AI-AgriVision?style=flat-square"/>
+<img src="https://img.shields.io/github/issues/Mohamed-oosama/AI-AgriVision?style=flat-square"/>
+<img src="https://img.shields.io/github/license/Mohamed-oosama/AI-AgriVision?style=flat-square"/>
+<img src="https://img.shields.io/github/last-commit/Mohamed-oosama/AI-AgriVision?style=flat-square"/>
+
 </p>
 
 <p align="center">
-  <b>Mansoura National University · Faculty of Engineering · AI Engineering Department</b><br/>
-  <i>Graduation Project 2025–2026</i>
+
+<img src="https://img.shields.io/badge/Version-v1.0-blue?style=flat-square"/>
+<img src="https://img.shields.io/badge/Language-Arabic%20%7C%20English-orange?style=flat-square"/>
+<img src="https://img.shields.io/badge/Deployment-Offline%20AI-purple?style=flat-square"/>
+<img src="https://img.shields.io/badge/Platform-Web-success?style=flat-square"/>
+<img src="https://img.shields.io/badge/Status-Active-brightgreen?style=flat-square"/>
+
 </p>
 
----
+<p align="center">
+<b>Mansoura National University</b><br>
+Faculty of Engineering • Artificial Intelligence Engineering Program<br>
+<i>Graduation Project 2025–2026</i>
+</p>
 
-> **"From Diagnosis to Decision — One Intelligent Platform."**
+<p align="center">
+<img src="images/demo.gif" width="900" alt="AI AgriVision Demo"/>
+</p>
+
+<p align="center">
+
+<a href="#-installation">Installation</a> •
+<a href="#-quick-start">Quick Start</a> •
+<a href="#-technology-stack">Tech Stack</a> •
+<a href="#-project-gallery">Gallery</a> •
+<a href="#-project-brochure">Brochure</a> •
+<a href="#-graduation-project-thesis">Thesis</a> •
+<a href="#-team-members">Team</a>
+
+</p>
+
+> ### 🌱 *From Diagnosis to Decision — One Intelligent Platform.*
 
 </div>
 
 ---
 
-## 📖 Table of Contents
+# 📚 Table of Contents
 
-- [Overview](#-overview)
-- [Why AI AgriVision?](#-why-ai-agrivision)
-- [Key Features](#-key-features)
-- [System Architecture](#-system-architecture)
-- [AI Modules](#-ai-modules)
-  - [Module 1 — Plant Diagnosis](#-module-1--plant-diagnosis)
-  - [Module 2 — AgriChat](#-module-2--agrichat)
-  - [Module 3 — Fertilizer Recommendation](#-module-3--fertilizer-recommendation)
-  - [Module 4 — Crop Yield Prediction](#-module-4--crop-yield-prediction)
-  - [Module 5 — Early Warning System](#-module-5--early-warning-system)
-  - [Module 6 — Cognitive AI Engine](#-module-6--cognitive-ai-engine)
-- [Technology Stack](#-technology-stack)
-- [Project Structure](#-project-structure)
-- [Installation](#-installation)
-- [Quick Start](#-quick-start)
-- [REST API Reference](#-rest-api-reference)
-- [Research Contributions](#-research-contributions)
-- [Roadmap](#-roadmap)
-- [Team](#-team)
-- [Citation](#-citation)
-- [License](#-license)
+- 🌍 Overview
+- ❓ Why AI AgriVision?
+- 🌟 Key Features
+- 🖼️ Project Gallery
+- 📑 Project Brochure
+- 📘 Graduation Thesis
+- 🏗️ System Architecture
+- 🤖 AI Modules
+- 💻 Technology Stack
+- 📁 Project Structure
+- ⚙️ Installation
+- 🚀 Quick Start
+- 🔌 REST API
+- 📚 Research Contributions
+- 🛣️ Roadmap
+- 👥 Team Members
+- 📖 Citation
+- 📄 License
+
+---
+
+## 🚀 Quick Navigation
+
+| Section | Description |
+|---------|-------------|
+| 🌿 Plant Diagnosis | Detect diseases, pests, and nutrient deficiencies |
+| 💬 AgriChat | AI Agricultural Assistant with Hybrid RAG |
+| 🌱 Soil Analysis | Smart soil and fertilizer recommendation |
+| 📈 Yield Prediction | Machine Learning crop forecasting |
+| 🛰️ Early Warning | Satellite-based vegetation monitoring |
+| 🧠 Cognitive AI | Knowledge Graph + Expert System |
+| 📑 Brochure | Official project brochure |
+| 📘 Thesis | Full graduation project documentation |
+| 🏗️ Architecture | Overall system design |
+| 💻 Tech Stack | AI frameworks and tools |
+| 👥 Team | Project contributors |
 
 ---
 
@@ -185,7 +229,9 @@ Most agricultural AI solutions are isolated:
 </table>
 
 ---
-# 📸 AI-AgriVision Screenshots
+# 🖼️ Project Gallery
+
+Explore the main interfaces and AI-powered modules of **AI AgriVision** through the following screenshots.
 
 This folder contains all screenshots and visual assets for the AI-AgriVision project.
 These images demonstrate the system modules and AI interfaces.
@@ -230,31 +276,64 @@ These images demonstrate the system modules and AI interfaces.
 </p>
 
 ---
-## 📄 Project Brochure
-
-<p align="center">
-  <img src="images/brochure-preview.png" alt="Project Brochure Preview" width="700"/>
-</p>
+## 📑 Project Brochure
 
 <p align="center">
   <a href="docs/Project_Brochure.pdf">
-    📥 <strong>Open Project Brochure (PDF)</strong>
+    <img src="images/brochure-preview.png"
+         alt="AI AgriVision Project Brochure"
+         width="800"/>
   </a>
 </p>
 
+<p align="center">
+
+<img src="https://img.shields.io/badge/Brochure-PDF-red?style=for-the-badge"/>
+<img src="https://img.shields.io/badge/Project-Overview-success?style=for-the-badge"/>
+<img src="https://img.shields.io/badge/AI-AgriVision-blue?style=for-the-badge"/>
+
+</p>
+
+<p align="center">
+<b>Official AI AgriVision Project Brochure</b><br>
+A concise overview of the project's objectives, AI modules, architecture, technologies, and expected impact.<br><br>
+
+👉 <a href="docs/Project_Brochure.pdf"><b>Click here to open the full brochure (PDF)</b></a>
+
+</p>
+
 ---
-## 📄 Graduation Project Report
+---
+## 📘 Graduation Project Thesis
+
 <p align="center">
-  <img src="images/Cover Book.png" alt="Cover Book Preview" width="700"/>
+  <a href="docs/AI_AgriVision.pdf">
+    <img src="images/Cover Book.png"
+         alt="AI AgriVision Graduation Thesis"
+         width="700"/>
+  </a>
 </p>
 
 <p align="center">
-  📘 Full Graduation Book for AI-AgriVision Project
+
+<img src="https://img.shields.io/badge/Graduation-Thesis-blue?style=for-the-badge"/>
+<img src="https://img.shields.io/badge/Documentation-PDF-success?style=for-the-badge"/>
+<img src="https://img.shields.io/badge/AI%20Engineering-MNU-orange?style=for-the-badge"/>
+
 </p>
 
 <p align="center">
-  👉 <a href="docs/AI_AgriVision.pdf"><b>📥 Open / Download Full Book</b></a>
+<b>Complete Graduation Thesis for AI AgriVision</b><br>
+
+This document presents the complete research, system design, implementation details, experiments, and evaluation of the project.
+
+<br><br>
+
+📖 <a href="docs/AI_AgriVision.pdf"><b>Read the Full Graduation Thesis</b></a>
+
 </p>
+
+---
 
 ---
 
