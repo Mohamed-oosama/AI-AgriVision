@@ -244,6 +244,9 @@ These images demonstrate the system modules and AI interfaces.
 
 ---
 ## 📄 Graduation Project Report
+<p align="center">
+  <img src="images/Cover Book.png" alt="Cover Book Preview" width="700"/>
+</p>
 
 <p align="center">
   📘 Full Graduation Book for AI-AgriVision Project
