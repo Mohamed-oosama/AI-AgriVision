@@ -898,12 +898,12 @@ For questions, suggestions, or collaborations:
 
 | Name | LinkedIn |
 |------|----------|
-| Mohamed Osama | [Profile](https://www.linkedin.com/in/mohamed-osama-kamel/) |
-| Badr Islam | [Profile](https://www.linkedin.com/in/badr-islam-4881b12a4/ar/) |
-| Mohamed Ali Shatla | [Profile](https://www.linkedin.com/in/mohamed-ali-shatla-88734b362/) |
-| Ibrahim Amin | [Profile](https://www.linkedin.com/in/ibrahim-amin-aie0101010101/) |
-| Mahmoud Ellakany | [Profile](https://www.linkedin.com/in/mahmoud-ashraf-hosny/) |
-| Mohammed Ashraf | [Profile](https://www.linkedin.com/in/mohammed-ashraf-449a782a3/) |
+| Mohamed Osama | [Linkedin](https://www.linkedin.com/in/mohamed-osama-kamel/) |
+| Badr Islam | [Linkedin](https://www.linkedin.com/in/badr-islam-4881b12a4/ar/) |
+| Mohamed Ali Shatla | [Linkedin](https://www.linkedin.com/in/mohamed-ali-shatla-88734b362/) |
+| Ibrahim Amin | [Linkedin](https://www.linkedin.com/in/ibrahim-amin-aie0101010101/) |
+| Mahmoud Ellakany | [Linkedin](https://www.linkedin.com/in/mahmoud-ashraf-hosny/) |
+| Mohammed Ashraf | [Linkedin](https://www.linkedin.com/in/mohammed-ashraf-449a782a3/) |
 
 ---
 
